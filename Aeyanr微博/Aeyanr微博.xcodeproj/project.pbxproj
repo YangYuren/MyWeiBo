@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF115DAA1EC6B83A002335F2 /* AppDelegate.swift */; };
+		EF115DAD1EC6B83A002335F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF115DAC1EC6B83A002335F2 /* ViewController.swift */; };
+		EF115DB01EC6B83A002335F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF115DAE1EC6B83A002335F2 /* Main.storyboard */; };
+		EF115DB21EC6B83A002335F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF115DB11EC6B83A002335F2 /* Assets.xcassets */; };
+		EF115DB51EC6B83A002335F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF115DB31EC6B83A002335F2 /* LaunchScreen.storyboard */; };
+		EF115DC01EC6B83A002335F2 /* Aeyanr__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF115DBF1EC6B83A002335F2 /* Aeyanr__Tests.swift */; };
+		EF115DCB1EC6B83A002335F2 /* Aeyanr__UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF115DCA1EC6B83A002335F2 /* Aeyanr__UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF115DBC1EC6B83A002335F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF115D9F1EC6B83A002335F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF115DA61EC6B83A002335F2;
+			remoteInfo = "Aeyanr微博";
+		};
+		EF115DC71EC6B83A002335F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF115D9F1EC6B83A002335F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF115DA61EC6B83A002335F2;
+			remoteInfo = "Aeyanr微博";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF115DA71EC6B83A002335F2 /* Aeyanr微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aeyanr微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF115DAA1EC6B83A002335F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF115DAC1EC6B83A002335F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF115DAF1EC6B83A002335F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF115DB11EC6B83A002335F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF115DB41EC6B83A002335F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF115DB61EC6B83A002335F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF115DBB1EC6B83A002335F2 /* Aeyanr微博Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aeyanr微博Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF115DBF1EC6B83A002335F2 /* Aeyanr__Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aeyanr__Tests.swift; sourceTree = "<group>"; };
+		EF115DC11EC6B83A002335F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF115DC61EC6B83A002335F2 /* Aeyanr微博UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aeyanr微博UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF115DCA1EC6B83A002335F2 /* Aeyanr__UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aeyanr__UITests.swift; sourceTree = "<group>"; };
+		EF115DCC1EC6B83A002335F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF115DA41EC6B83A002335F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF115DB81EC6B83A002335F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF115DC31EC6B83A002335F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF115D9E1EC6B83A002335F2 = {
+			isa = PBXGroup;
+			children = (
+				EF115DA91EC6B83A002335F2 /* Aeyanr微博 */,
+				EF115DBE1EC6B83A002335F2 /* Aeyanr微博Tests */,
+				EF115DC91EC6B83A002335F2 /* Aeyanr微博UITests */,
+				EF115DA81EC6B83A002335F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF115DA81EC6B83A002335F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF115DA71EC6B83A002335F2 /* Aeyanr微博.app */,
+				EF115DBB1EC6B83A002335F2 /* Aeyanr微博Tests.xctest */,
+				EF115DC61EC6B83A002335F2 /* Aeyanr微博UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF115DA91EC6B83A002335F2 /* Aeyanr微博 */ = {
+			isa = PBXGroup;
+			children = (
+				EF115DAA1EC6B83A002335F2 /* AppDelegate.swift */,
+				EF115DAC1EC6B83A002335F2 /* ViewController.swift */,
+				EF115DAE1EC6B83A002335F2 /* Main.storyboard */,
+				EF115DB11EC6B83A002335F2 /* Assets.xcassets */,
+				EF115DB31EC6B83A002335F2 /* LaunchScreen.storyboard */,
+				EF115DB61EC6B83A002335F2 /* Info.plist */,
+			);
+			path = "Aeyanr微博";
+			sourceTree = "<group>";
+		};
+		EF115DBE1EC6B83A002335F2 /* Aeyanr微博Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EF115DBF1EC6B83A002335F2 /* Aeyanr__Tests.swift */,
+				EF115DC11EC6B83A002335F2 /* Info.plist */,
+			);
+			path = "Aeyanr微博Tests";
+			sourceTree = "<group>";
+		};
+		EF115DC91EC6B83A002335F2 /* Aeyanr微博UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF115DCA1EC6B83A002335F2 /* Aeyanr__UITests.swift */,
+				EF115DCC1EC6B83A002335F2 /* Info.plist */,
+			);
+			path = "Aeyanr微博UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF115DA61EC6B83A002335F2 /* Aeyanr微博 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF115DCF1EC6B83A002335F2 /* Build configuration list for PBXNativeTarget "Aeyanr微博" */;
+			buildPhases = (
+				EF115DA31EC6B83A002335F2 /* Sources */,
+				EF115DA41EC6B83A002335F2 /* Frameworks */,
+				EF115DA51EC6B83A002335F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aeyanr微博";
+			productName = "Aeyanr微博";
+			productReference = EF115DA71EC6B83A002335F2 /* Aeyanr微博.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF115DBA1EC6B83A002335F2 /* Aeyanr微博Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF115DD21EC6B83A002335F2 /* Build configuration list for PBXNativeTarget "Aeyanr微博Tests" */;
+			buildPhases = (
+				EF115DB71EC6B83A002335F2 /* Sources */,
+				EF115DB81EC6B83A002335F2 /* Frameworks */,
+				EF115DB91EC6B83A002335F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF115DBD1EC6B83A002335F2 /* PBXTargetDependency */,
+			);
+			name = "Aeyanr微博Tests";
+			productName = "Aeyanr微博Tests";
+			productReference = EF115DBB1EC6B83A002335F2 /* Aeyanr微博Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF115DC51EC6B83A002335F2 /* Aeyanr微博UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF115DD51EC6B83A002335F2 /* Build configuration list for PBXNativeTarget "Aeyanr微博UITests" */;
+			buildPhases = (
+				EF115DC21EC6B83A002335F2 /* Sources */,
+				EF115DC31EC6B83A002335F2 /* Frameworks */,
+				EF115DC41EC6B83A002335F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF115DC81EC6B83A002335F2 /* PBXTargetDependency */,
+			);
+			name = "Aeyanr微博UITests";
+			productName = "Aeyanr微博UITests";
+			productReference = EF115DC61EC6B83A002335F2 /* Aeyanr微博UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF115D9F1EC6B83A002335F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Yang;
+				TargetAttributes = {
+					EF115DA61EC6B83A002335F2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					EF115DBA1EC6B83A002335F2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF115DA61EC6B83A002335F2;
+					};
+					EF115DC51EC6B83A002335F2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF115DA61EC6B83A002335F2;
+					};
+				};
+			};
+			buildConfigurationList = EF115DA21EC6B83A002335F2 /* Build configuration list for PBXProject "Aeyanr微博" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF115D9E1EC6B83A002335F2;
+			productRefGroup = EF115DA81EC6B83A002335F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF115DA61EC6B83A002335F2 /* Aeyanr微博 */,
+				EF115DBA1EC6B83A002335F2 /* Aeyanr微博Tests */,
+				EF115DC51EC6B83A002335F2 /* Aeyanr微博UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF115DA51EC6B83A002335F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF115DB51EC6B83A002335F2 /* LaunchScreen.storyboard in Resources */,
+				EF115DB21EC6B83A002335F2 /* Assets.xcassets in Resources */,
+				EF115DB01EC6B83A002335F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF115DB91EC6B83A002335F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF115DC41EC6B83A002335F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF115DA31EC6B83A002335F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF115DAD1EC6B83A002335F2 /* ViewController.swift in Sources */,
+				EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF115DB71EC6B83A002335F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF115DC01EC6B83A002335F2 /* Aeyanr__Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF115DC21EC6B83A002335F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF115DCB1EC6B83A002335F2 /* Aeyanr__UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF115DBD1EC6B83A002335F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF115DA61EC6B83A002335F2 /* Aeyanr微博 */;
+			targetProxy = EF115DBC1EC6B83A002335F2 /* PBXContainerItemProxy */;
+		};
+		EF115DC81EC6B83A002335F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF115DA61EC6B83A002335F2 /* Aeyanr微博 */;
+			targetProxy = EF115DC71EC6B83A002335F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF115DAE1EC6B83A002335F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF115DAF1EC6B83A002335F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF115DB31EC6B83A002335F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF115DB41EC6B83A002335F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF115DCD1EC6B83A002335F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF115DCE1EC6B83A002335F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF115DD01EC6B83A002335F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Aeyanr微博/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aeyanr.com.Aeyanr--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF115DD11EC6B83A002335F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Aeyanr微博/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aeyanr.com.Aeyanr--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EF115DD31EC6B83A002335F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Aeyanr微博Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aeyanr.com.Aeyanr--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aeyanr微博.app/Aeyanr微博";
+			};
+			name = Debug;
+		};
+		EF115DD41EC6B83A002335F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Aeyanr微博Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aeyanr.com.Aeyanr--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aeyanr微博.app/Aeyanr微博";
+			};
+			name = Release;
+		};
+		EF115DD61EC6B83A002335F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Aeyanr微博UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aeyanr.com.Aeyanr--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Aeyanr微博";
+			};
+			name = Debug;
+		};
+		EF115DD71EC6B83A002335F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Aeyanr微博UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aeyanr.com.Aeyanr--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Aeyanr微博";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF115DA21EC6B83A002335F2 /* Build configuration list for PBXProject "Aeyanr微博" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF115DCD1EC6B83A002335F2 /* Debug */,
+				EF115DCE1EC6B83A002335F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF115DCF1EC6B83A002335F2 /* Build configuration list for PBXNativeTarget "Aeyanr微博" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF115DD01EC6B83A002335F2 /* Debug */,
+				EF115DD11EC6B83A002335F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF115DD21EC6B83A002335F2 /* Build configuration list for PBXNativeTarget "Aeyanr微博Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF115DD31EC6B83A002335F2 /* Debug */,
+				EF115DD41EC6B83A002335F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF115DD51EC6B83A002335F2 /* Build configuration list for PBXNativeTarget "Aeyanr微博UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF115DD61EC6B83A002335F2 /* Debug */,
+				EF115DD71EC6B83A002335F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF115D9F1EC6B83A002335F2 /* Project object */;
+}
