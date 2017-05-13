@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF115DAA1EC6B83A002335F2 /* AppDelegate.swift */; };
-		EF115DAD1EC6B83A002335F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF115DAC1EC6B83A002335F2 /* ViewController.swift */; };
 		EF115DB01EC6B83A002335F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF115DAE1EC6B83A002335F2 /* Main.storyboard */; };
 		EF115DB21EC6B83A002335F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF115DB11EC6B83A002335F2 /* Assets.xcassets */; };
 		EF115DB51EC6B83A002335F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF115DB31EC6B83A002335F2 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		EF115DA71EC6B83A002335F2 /* Aeyanr微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aeyanr微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF115DAA1EC6B83A002335F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF115DAC1EC6B83A002335F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF115DAF1EC6B83A002335F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF115DB11EC6B83A002335F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF115DB41EC6B83A002335F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +95,8 @@
 		EF115DA91EC6B83A002335F2 /* Aeyanr微博 */ = {
 			isa = PBXGroup;
 			children = (
+				EF507B071EC6E2F900E3581B /* Classes */,
 				EF115DAA1EC6B83A002335F2 /* AppDelegate.swift */,
-				EF115DAC1EC6B83A002335F2 /* ViewController.swift */,
 				EF115DAE1EC6B83A002335F2 /* Main.storyboard */,
 				EF115DB11EC6B83A002335F2 /* Assets.xcassets */,
 				EF115DB31EC6B83A002335F2 /* LaunchScreen.storyboard */,
@@ -123,6 +121,45 @@
 				EF115DCC1EC6B83A002335F2 /* Info.plist */,
 			);
 			path = "Aeyanr微博UITests";
+			sourceTree = "<group>";
+		};
+		EF507B071EC6E2F900E3581B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF507B081EC6E2F900E3581B /* Home */,
+				EF507B091EC6E2F900E3581B /* Main */,
+				EF507B0A1EC6E2F900E3581B /* Message */,
+				EF507B0B1EC6E2F900E3581B /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF507B081EC6E2F900E3581B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF507B091EC6E2F900E3581B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF507B0A1EC6E2F900E3581B /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		EF507B0B1EC6E2F900E3581B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF115DAD1EC6B83A002335F2 /* ViewController.swift in Sources */,
 				EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,11 +450,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Aeyanr微博/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aeyanr.com.Aeyanr--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -426,11 +464,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Aeyanr微博/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aeyanr.com.Aeyanr--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -507,6 +547,7 @@
 				EF115DD11EC6B83A002335F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF115DD21EC6B83A002335F2 /* Build configuration list for PBXNativeTarget "Aeyanr微博Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +556,7 @@
 				EF115DD41EC6B83A002335F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF115DD51EC6B83A002335F2 /* Build configuration list for PBXNativeTarget "Aeyanr微博UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +565,7 @@
 				EF115DD71EC6B83A002335F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
