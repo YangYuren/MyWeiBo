@@ -19,6 +19,11 @@
 		EF507B141EC6E5BA00E3581B /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B131EC6E5BA00E3581B /* MessageController.swift */; };
 		EF507B161EC6E5C700E3581B /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B151EC6E5C700E3581B /* DiscoverController.swift */; };
 		EF507B181EC6E5D000E3581B /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B171EC6E5D000E3581B /* ProfileController.swift */; };
+		EF507B1B1EC7048800E3581B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF507B191EC7048800E3581B /* Home.storyboard */; };
+		EF507B1D1EC704A200E3581B /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF507B1C1EC704A200E3581B /* Message.storyboard */; };
+		EF507B201EC704B500E3581B /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF507B1E1EC704B500E3581B /* Discover.storyboard */; };
+		EF507B221EC704CB00E3581B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF507B211EC704CB00E3581B /* Profile.storyboard */; };
+		EF507B251EC70BEF00E3581B /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B241EC70BEF00E3581B /* UIButton-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		EF507B131EC6E5BA00E3581B /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		EF507B151EC6E5C700E3581B /* DiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
 		EF507B171EC6E5D000E3581B /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		EF507B1A1EC7048800E3581B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		EF507B1C1EC704A200E3581B /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../../Message.storyboard; sourceTree = "<group>"; };
+		EF507B1F1EC704B500E3581B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
+		EF507B211EC704CB00E3581B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../../Profile.storyboard; sourceTree = "<group>"; };
+		EF507B241EC70BEF00E3581B /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,7 @@
 		EF507B071EC6E2F900E3581B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EF507B231EC70B8600E3581B /* Tools */,
 				EF507B091EC6E2F900E3581B /* Main */,
 				EF507B081EC6E2F900E3581B /* Home */,
 				EF507B0A1EC6E2F900E3581B /* Message */,
@@ -151,6 +162,7 @@
 		EF507B081EC6E2F900E3581B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EF507B191EC7048800E3581B /* Home.storyboard */,
 				EF507B111EC6E5AE00E3581B /* HomeController.swift */,
 			);
 			path = Home;
@@ -167,6 +179,7 @@
 		EF507B0A1EC6E2F900E3581B /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				EF507B1C1EC704A200E3581B /* Message.storyboard */,
 				EF507B131EC6E5BA00E3581B /* MessageController.swift */,
 			);
 			path = Message;
@@ -175,6 +188,7 @@
 		EF507B0B1EC6E2F900E3581B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EF507B211EC704CB00E3581B /* Profile.storyboard */,
 				EF507B171EC6E5D000E3581B /* ProfileController.swift */,
 			);
 			path = Profile;
@@ -183,9 +197,18 @@
 		EF507B0C1EC6E35C00E3581B /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				EF507B1E1EC704B500E3581B /* Discover.storyboard */,
 				EF507B151EC6E5C700E3581B /* DiscoverController.swift */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		EF507B231EC70B8600E3581B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EF507B241EC70BEF00E3581B /* UIButton-Extension.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF115DB51EC6B83A002335F2 /* LaunchScreen.storyboard in Resources */,
+				EF507B1B1EC7048800E3581B /* Home.storyboard in Resources */,
+				EF507B221EC704CB00E3581B /* Profile.storyboard in Resources */,
 				EF115DB21EC6B83A002335F2 /* Assets.xcassets in Resources */,
 				EF507B101EC6E53500E3581B /* MainVCSettings.json in Resources */,
+				EF507B1D1EC704A200E3581B /* Message.storyboard in Resources */,
+				EF507B201EC704B500E3581B /* Discover.storyboard in Resources */,
 				EF115DB01EC6B83A002335F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF507B161EC6E5C700E3581B /* DiscoverController.swift in Sources */,
+				EF507B251EC70BEF00E3581B /* UIButton-Extension.swift in Sources */,
 				EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */,
 				EF507B0E1EC6E4D600E3581B /* MainViewController.swift in Sources */,
 				EF507B121EC6E5AE00E3581B /* HomeController.swift in Sources */,
@@ -378,6 +406,24 @@
 				EF115DB41EC6B83A002335F2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF507B191EC7048800E3581B /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF507B1A1EC7048800E3581B /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EF507B1E1EC704B500E3581B /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF507B1F1EC704B500E3581B /* Base */,
+			);
+			name = Discover.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
