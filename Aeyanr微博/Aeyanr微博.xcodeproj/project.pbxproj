@@ -24,6 +24,9 @@
 		EF507B201EC704B500E3581B /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF507B1E1EC704B500E3581B /* Discover.storyboard */; };
 		EF507B221EC704CB00E3581B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF507B211EC704CB00E3581B /* Profile.storyboard */; };
 		EF507B251EC70BEF00E3581B /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B241EC70BEF00E3581B /* UIButton-Extension.swift */; };
+		EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBED75F1EC7350000A2F596 /* BaseViewController.swift */; };
+		EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBED7611EC736D500A2F596 /* VisitorView.swift */; };
+		EFBED7641EC736EE00A2F596 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBED7631EC736EE00A2F596 /* VisitorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		EF507B1F1EC704B500E3581B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		EF507B211EC704CB00E3581B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../../Profile.storyboard; sourceTree = "<group>"; };
 		EF507B241EC70BEF00E3581B /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		EFBED75F1EC7350000A2F596 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EFBED7611EC736D500A2F596 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		EFBED7631EC736EE00A2F596 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 		EF507B071EC6E2F900E3581B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EFBED75E1EC734DF00A2F596 /* Visitor */,
 				EF507B231EC70B8600E3581B /* Tools */,
 				EF507B091EC6E2F900E3581B /* Main */,
 				EF507B081EC6E2F900E3581B /* Home */,
@@ -209,6 +216,16 @@
 				EF507B241EC70BEF00E3581B /* UIButton-Extension.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		EFBED75E1EC734DF00A2F596 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				EFBED75F1EC7350000A2F596 /* BaseViewController.swift */,
+				EFBED7611EC736D500A2F596 /* VisitorView.swift */,
+				EFBED7631EC736EE00A2F596 /* VisitorView.xib */,
+			);
+			path = Visitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +343,7 @@
 				EF507B1D1EC704A200E3581B /* Message.storyboard in Resources */,
 				EF507B201EC704B500E3581B /* Discover.storyboard in Resources */,
 				EF115DB01EC6B83A002335F2 /* Main.storyboard in Resources */,
+				EFBED7641EC736EE00A2F596 /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +373,8 @@
 				EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */,
 				EF507B0E1EC6E4D600E3581B /* MainViewController.swift in Sources */,
 				EF507B121EC6E5AE00E3581B /* HomeController.swift in Sources */,
+				EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */,
+				EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */,
 				EF507B141EC6E5BA00E3581B /* MessageController.swift in Sources */,
 				EF507B181EC6E5D000E3581B /* ProfileController.swift in Sources */,
 			);

@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UITabBarController {
     //fileprivate lazy var composeBtn : UIButton  = UIButton.createButton(imageName: "tabbar_compose_icon_add", bgImageName:
     //    "tabbar_compose_button")
+    //添加init方法   oc中不可以，swift可以
     fileprivate lazy var composeBtn : UIButton  = UIButton(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +50,13 @@ class MainViewController: UITabBarController {
 extension MainViewController {
    fileprivate func setupComposed(){
         tabBar.addSubview(composeBtn)
+    composeBtn.addTarget(self, action: #selector(MainViewController.composeBtnClick), for: .touchUpInside)
         composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height*0.5)
+    }
+}
+//MARK:- 事件监听
+extension MainViewController {
+    func composeBtnClick() {
+        print("hellow")
     }
 }

@@ -8,16 +8,12 @@
 
 import UIKit
 
-class DiscoverController: UITableViewController {
+class DiscoverController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        visitorView.setupVisitorInfo(iconName: "visitordiscover_image_message", title: "登陆后，别人评论你的微博，给你发消息，都会在这里收到通知")
     }
 
     override func didReceiveMemoryWarning() {
