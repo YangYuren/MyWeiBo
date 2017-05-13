@@ -126,9 +126,10 @@
 		EF507B071EC6E2F900E3581B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EF507B081EC6E2F900E3581B /* Home */,
 				EF507B091EC6E2F900E3581B /* Main */,
+				EF507B081EC6E2F900E3581B /* Home */,
 				EF507B0A1EC6E2F900E3581B /* Message */,
+				EF507B0C1EC6E35C00E3581B /* Discover */,
 				EF507B0B1EC6E2F900E3581B /* Profile */,
 			);
 			path = Classes;
@@ -160,6 +161,13 @@
 			children = (
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		EF507B0C1EC6E35C00E3581B /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
