@@ -17,18 +17,18 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="254" height="196"/>
+            <rect key="frame" x="0.0" y="0.0" width="274" height="250"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lpo-1p-ghq">
-                    <rect key="frame" x="0.0" y="0.0" width="254" height="196"/>
+                    <rect key="frame" x="0.0" y="0.0" width="274" height="250"/>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q8V-AR-bn8">
-                    <rect key="frame" x="20" y="20" width="214" height="156"/>
+                    <rect key="frame" x="20" y="20" width="234" height="210"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Q8V-AR-bn8" secondAttribute="bottom" constant="20" id="2jL-ZO-1Hv"/>
                 <constraint firstItem="Q8V-AR-bn8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="3rP-wv-eIR"/>
@@ -41,7 +41,7 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-307" y="-157"/>
+            <point key="canvasLocation" x="-297" y="-130"/>
         </view>
     </objects>
 </document>

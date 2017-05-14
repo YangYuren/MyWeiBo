@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF000F101EC83D8800CE817B /* AYPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */; };
+		EF000F121EC8536600CE817B /* AYPopoverAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */; };
 		EF1052321EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1052311EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift */; };
 		EF1052341EC7F29D00B8B910 /* TitleButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1052331EC7F29D00B8B910 /* TitleButtom.swift */; };
 		EF10523B1EC7FAB500B8B910 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1052391EC7FAB500B8B910 /* PopoverViewController.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPresentationController.swift; sourceTree = "<group>"; };
+		EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPopoverAnimate.swift; sourceTree = "<group>"; };
 		EF1052311EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem-Extension.swift"; path = "../UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		EF1052331EC7F29D00B8B910 /* TitleButtom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButtom.swift; sourceTree = "<group>"; };
 		EF1052391EC7FAB500B8B910 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 			children = (
 				EF1052391EC7FAB500B8B910 /* PopoverViewController.swift */,
 				EF10523A1EC7FAB500B8B910 /* PopoverViewController.xib */,
+				EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */,
+				EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */,
 			);
 			path = UIPopover;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 		EF115D9F1EC6B83A002335F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AY;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Yang;
@@ -403,8 +410,10 @@
 				EF507B251EC70BEF00E3581B /* UIButton-Extension.swift in Sources */,
 				EF10523B1EC7FAB500B8B910 /* PopoverViewController.swift in Sources */,
 				EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */,
+				EF000F101EC83D8800CE817B /* AYPresentationController.swift in Sources */,
 				EF507B0E1EC6E4D600E3581B /* MainViewController.swift in Sources */,
 				EF507B121EC6E5AE00E3581B /* HomeController.swift in Sources */,
+				EF000F121EC8536600CE817B /* AYPopoverAnimate.swift in Sources */,
 				EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */,
 				EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */,
 				EF507B141EC6E5BA00E3581B /* MessageController.swift in Sources */,

@@ -10,7 +10,11 @@ import UIKit
 
 class HomeController: BaseViewController {
     //MARK:- 懒加载属性
-    lazy var titleBtn : TitleButtom = TitleButtom()
+    fileprivate lazy var titleBtn : TitleButtom = TitleButtom()
+    fileprivate lazy var popoverAnimate : AYPopoverAnimate  = AYPopoverAnimate { [weak self](presented) in
+        self?.titleBtn.isSelected = presented
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //没有登录时候的内容
@@ -21,6 +25,7 @@ class HomeController: BaseViewController {
         //设置导航栏的内容
         setupNavigationBar()
     }
+    
 }
 //MARK:- 设置UI界面
 extension HomeController {
@@ -40,9 +45,22 @@ extension HomeController {
 extension HomeController {
     @objc fileprivate func titleBtnClick(titleBtn : TitleButtom){
         titleBtn.isSelected = !titleBtn.isSelected
-        
+        //设置弹出控制器
         let vc = PopoverViewController()
+        //设置model的样式
         vc.modalPresentationStyle = .custom
+        //设置转场动画代理
+        popoverAnimate.presentedFrame = CGRect(x: 90, y: 55, width: 180, height: 240)
+        vc.transitioningDelegate = popoverAnimate
+        //弹出控制器
         present(vc, animated: true, completion: nil)
     }
 }
+
+
+
+
+
+
+
+
