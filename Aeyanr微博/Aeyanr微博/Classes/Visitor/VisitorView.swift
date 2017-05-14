@@ -18,6 +18,10 @@ class VisitorView: UIView {
     @IBOutlet weak var rotationView: UIImageView!
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var tipView: UILabel!
+    @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var loginBtn: UIButton!
+    
+    
     func setupVisitorInfo(iconName: String , title : String) {
         iconView.image = UIImage(named: iconName)
         tipView.text = title
