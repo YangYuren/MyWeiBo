@@ -30,9 +30,14 @@
 		EF507B201EC704B500E3581B /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF507B1E1EC704B500E3581B /* Discover.storyboard */; };
 		EF507B221EC704CB00E3581B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF507B211EC704CB00E3581B /* Profile.storyboard */; };
 		EF507B251EC70BEF00E3581B /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B241EC70BEF00E3581B /* UIButton-Extension.swift */; };
+		EF637C7F1ECBE1EB0098FCE1 /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF637C7E1ECBE1EB0098FCE1 /* NetWorkTools.swift */; };
+		EF637C821ECBE2270098FCE1 /* AYOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF637C801ECBE2270098FCE1 /* AYOAuthViewController.swift */; };
+		EF637C831ECBE2270098FCE1 /* AYOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF637C811ECBE2270098FCE1 /* AYOAuthViewController.xib */; };
+		EF637C851ECBEBDC0098FCE1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF637C841ECBEBDC0098FCE1 /* Common.swift */; };
 		EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBED75F1EC7350000A2F596 /* BaseViewController.swift */; };
 		EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBED7611EC736D500A2F596 /* VisitorView.swift */; };
 		EFBED7641EC736EE00A2F596 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBED7631EC736EE00A2F596 /* VisitorView.xib */; };
+		F4A34D20787564F41F23BD21 /* Pods_Aeyanr__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B10A28BD747FCF456713F6 /* Pods_Aeyanr__.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D89EDA72C90996BEDCFE263 /* Pods-Aeyanr微博.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aeyanr微博.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aeyanr微博/Pods-Aeyanr微博.debug.xcconfig"; sourceTree = "<group>"; };
+		76B10A28BD747FCF456713F6 /* Pods_Aeyanr__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aeyanr__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		967E83A791B3A725C8AF2996 /* Pods-Aeyanr微博.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aeyanr微博.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aeyanr微博/Pods-Aeyanr微博.release.xcconfig"; sourceTree = "<group>"; };
 		EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPresentationController.swift; sourceTree = "<group>"; };
 		EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPopoverAnimate.swift; sourceTree = "<group>"; };
 		EF1052311EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem-Extension.swift"; path = "../UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
@@ -82,6 +90,10 @@
 		EF507B1F1EC704B500E3581B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		EF507B211EC704CB00E3581B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../../Profile.storyboard; sourceTree = "<group>"; };
 		EF507B241EC70BEF00E3581B /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton-Extension.swift"; path = "../UIButton-Extension.swift"; sourceTree = "<group>"; };
+		EF637C7E1ECBE1EB0098FCE1 /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
+		EF637C801ECBE2270098FCE1 /* AYOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYOAuthViewController.swift; sourceTree = "<group>"; };
+		EF637C811ECBE2270098FCE1 /* AYOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AYOAuthViewController.xib; sourceTree = "<group>"; };
+		EF637C841ECBEBDC0098FCE1 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		EFBED75F1EC7350000A2F596 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EFBED7611EC736D500A2F596 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		EFBED7631EC736EE00A2F596 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
@@ -92,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A34D20787564F41F23BD21 /* Pods_Aeyanr__.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +125,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4197884B88487867BFD1675B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76B10A28BD747FCF456713F6 /* Pods_Aeyanr__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A90AAA601B344EA4089E09C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D89EDA72C90996BEDCFE263 /* Pods-Aeyanr微博.debug.xcconfig */,
+				967E83A791B3A725C8AF2996 /* Pods-Aeyanr微博.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF1052351EC7FA4000B8B910 /* UIPopover */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +169,8 @@
 				EF115DBE1EC6B83A002335F2 /* Aeyanr微博Tests */,
 				EF115DC91EC6B83A002335F2 /* Aeyanr微博UITests */,
 				EF115DA81EC6B83A002335F2 /* Products */,
+				6A90AAA601B344EA4089E09C /* Pods */,
+				4197884B88487867BFD1675B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +243,7 @@
 		EF507B091EC6E2F900E3581B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EF637C7D1ECBE14A0098FCE1 /* OAuth */,
 				EF507B0D1EC6E4D600E3581B /* MainViewController.swift */,
 			);
 			path = Main;
@@ -248,8 +281,19 @@
 			children = (
 				EF1052361EC7FA6000B8B910 /* Category */,
 				EF1052331EC7F29D00B8B910 /* TitleButtom.swift */,
+				EF637C7E1ECBE1EB0098FCE1 /* NetWorkTools.swift */,
+				EF637C841ECBEBDC0098FCE1 /* Common.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		EF637C7D1ECBE14A0098FCE1 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				EF637C801ECBE2270098FCE1 /* AYOAuthViewController.swift */,
+				EF637C811ECBE2270098FCE1 /* AYOAuthViewController.xib */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 		EFBED75E1EC734DF00A2F596 /* Visitor */ = {
@@ -269,9 +313,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF115DCF1EC6B83A002335F2 /* Build configuration list for PBXNativeTarget "Aeyanr微博" */;
 			buildPhases = (
+				E93E9F1F91A9D879973F88A1 /* [CP] Check Pods Manifest.lock */,
 				EF115DA31EC6B83A002335F2 /* Sources */,
 				EF115DA41EC6B83A002335F2 /* Frameworks */,
 				EF115DA51EC6B83A002335F2 /* Resources */,
+				D63AB575EFE4474D22DE82E2 /* [CP] Embed Pods Frameworks */,
+				F115DAF5E20D61E91FD0BCEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,6 +427,7 @@
 				EF507B201EC704B500E3581B /* Discover.storyboard in Resources */,
 				EF115DB01EC6B83A002335F2 /* Main.storyboard in Resources */,
 				EFBED7641EC736EE00A2F596 /* VisitorView.xib in Resources */,
+				EF637C831ECBE2270098FCE1 /* AYOAuthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,16 +447,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D63AB575EFE4474D22DE82E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aeyanr微博/Pods-Aeyanr微博-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E93E9F1F91A9D879973F88A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F115DAF5E20D61E91FD0BCEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aeyanr微博/Pods-Aeyanr微博-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF115DA31EC6B83A002335F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF637C851ECBEBDC0098FCE1 /* Common.swift in Sources */,
+				EF637C821ECBE2270098FCE1 /* AYOAuthViewController.swift in Sources */,
 				EF1052341EC7F29D00B8B910 /* TitleButtom.swift in Sources */,
 				EF1052321EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift in Sources */,
 				EF507B161EC6E5C700E3581B /* DiscoverController.swift in Sources */,
 				EF507B251EC70BEF00E3581B /* UIButton-Extension.swift in Sources */,
 				EF10523B1EC7FAB500B8B910 /* PopoverViewController.swift in Sources */,
+				EF637C7F1ECBE1EB0098FCE1 /* NetWorkTools.swift in Sources */,
 				EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */,
 				EF000F101EC83D8800CE817B /* AYPresentationController.swift in Sources */,
 				EF507B0E1EC6E4D600E3581B /* MainViewController.swift in Sources */,
@@ -587,6 +686,7 @@
 		};
 		EF115DD01EC6B83A002335F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D89EDA72C90996BEDCFE263 /* Pods-Aeyanr微博.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -601,6 +701,7 @@
 		};
 		EF115DD11EC6B83A002335F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 967E83A791B3A725C8AF2996 /* Pods-Aeyanr微博.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -12,7 +12,7 @@ class BaseViewController: UITableViewController {
     //MARK:- 懒加载属性
     lazy var visitorView : VisitorView = VisitorView.visitorView()
     //MARK:- 定义变量
-    var isLogin : Bool = true
+    var isLogin : Bool = false
     override func loadView() {
         isLogin ? super.loadView() : setupVisitorView()
     }
@@ -44,6 +44,10 @@ extension BaseViewController {
         print("register")
     }
     @objc fileprivate func loginBtnClick(){
-        print("login")
+        //创建授权控制器
+        let oauthVc = AYOAuthViewController()
+        //弹出控制器
+        let oAuthNav = UINavigationController(rootViewController: oauthVc)
+        present(oAuthNav, animated: true, completion: nil)
     }
 }
