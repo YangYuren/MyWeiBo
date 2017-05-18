@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EF000F101EC83D8800CE817B /* AYPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */; };
 		EF000F121EC8536600CE817B /* AYPopoverAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */; };
+		EF079A101ECC315E00B878E0 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF079A0F1ECC315E00B878E0 /* UserAccount.swift */; };
 		EF1052321EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1052311EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift */; };
 		EF1052341EC7F29D00B8B910 /* TitleButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1052331EC7F29D00B8B910 /* TitleButtom.swift */; };
 		EF10523B1EC7FAB500B8B910 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1052391EC7FAB500B8B910 /* PopoverViewController.swift */; };
@@ -19,6 +20,9 @@
 		EF115DB51EC6B83A002335F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF115DB31EC6B83A002335F2 /* LaunchScreen.storyboard */; };
 		EF115DC01EC6B83A002335F2 /* Aeyanr__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF115DBF1EC6B83A002335F2 /* Aeyanr__Tests.swift */; };
 		EF115DCB1EC6B83A002335F2 /* Aeyanr__UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF115DCA1EC6B83A002335F2 /* Aeyanr__UITests.swift */; };
+		EF26847D1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26847C1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift */; };
+		EF2684831ECDB07600CBBAE8 /* AYWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2684811ECDB07600CBBAE8 /* AYWelcomeController.swift */; };
+		EF2684841ECDB07600CBBAE8 /* AYWelcomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2684821ECDB07600CBBAE8 /* AYWelcomeController.xib */; };
 		EF507B0E1EC6E4D600E3581B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B0D1EC6E4D600E3581B /* MainViewController.swift */; };
 		EF507B101EC6E53500E3581B /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = EF507B0F1EC6E53500E3581B /* MainVCSettings.json */; };
 		EF507B121EC6E5AE00E3581B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B111EC6E5AE00E3581B /* HomeController.swift */; };
@@ -63,6 +67,7 @@
 		967E83A791B3A725C8AF2996 /* Pods-Aeyanr微博.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aeyanr微博.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aeyanr微博/Pods-Aeyanr微博.release.xcconfig"; sourceTree = "<group>"; };
 		EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPresentationController.swift; sourceTree = "<group>"; };
 		EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPopoverAnimate.swift; sourceTree = "<group>"; };
+		EF079A0F1ECC315E00B878E0 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		EF1052311EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem-Extension.swift"; path = "../UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		EF1052331EC7F29D00B8B910 /* TitleButtom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButtom.swift; sourceTree = "<group>"; };
 		EF1052391EC7FAB500B8B910 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +84,9 @@
 		EF115DC61EC6B83A002335F2 /* Aeyanr微博UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aeyanr微博UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF115DCA1EC6B83A002335F2 /* Aeyanr__UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aeyanr__UITests.swift; sourceTree = "<group>"; };
 		EF115DCC1EC6B83A002335F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF26847C1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewModel.swift; sourceTree = "<group>"; };
+		EF2684811ECDB07600CBBAE8 /* AYWelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYWelcomeController.swift; sourceTree = "<group>"; };
+		EF2684821ECDB07600CBBAE8 /* AYWelcomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AYWelcomeController.xib; sourceTree = "<group>"; };
 		EF507B0D1EC6E4D600E3581B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EF507B0F1EC6E53500E3581B /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		EF507B111EC6E5AE00E3581B /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -216,6 +224,15 @@
 			path = "Aeyanr微博UITests";
 			sourceTree = "<group>";
 		};
+		EF26847E1ECDB03500CBBAE8 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				EF2684811ECDB07600CBBAE8 /* AYWelcomeController.swift */,
+				EF2684821ECDB07600CBBAE8 /* AYWelcomeController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		EF507B071EC6E2F900E3581B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +260,7 @@
 		EF507B091EC6E2F900E3581B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EF26847E1ECDB03500CBBAE8 /* Welcome */,
 				EF637C7D1ECBE14A0098FCE1 /* OAuth */,
 				EF507B0D1EC6E4D600E3581B /* MainViewController.swift */,
 			);
@@ -292,6 +310,8 @@
 			children = (
 				EF637C801ECBE2270098FCE1 /* AYOAuthViewController.swift */,
 				EF637C811ECBE2270098FCE1 /* AYOAuthViewController.xib */,
+				EF079A0F1ECC315E00B878E0 /* UserAccount.swift */,
+				EF26847C1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -427,6 +447,7 @@
 				EF507B201EC704B500E3581B /* Discover.storyboard in Resources */,
 				EF115DB01EC6B83A002335F2 /* Main.storyboard in Resources */,
 				EFBED7641EC736EE00A2F596 /* VisitorView.xib in Resources */,
+				EF2684841ECDB07600CBBAE8 /* AYWelcomeController.xib in Resources */,
 				EF637C831ECBE2270098FCE1 /* AYOAuthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,8 +523,10 @@
 			files = (
 				EF637C851ECBEBDC0098FCE1 /* Common.swift in Sources */,
 				EF637C821ECBE2270098FCE1 /* AYOAuthViewController.swift in Sources */,
+				EF079A101ECC315E00B878E0 /* UserAccount.swift in Sources */,
 				EF1052341EC7F29D00B8B910 /* TitleButtom.swift in Sources */,
 				EF1052321EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift in Sources */,
+				EF26847D1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift in Sources */,
 				EF507B161EC6E5C700E3581B /* DiscoverController.swift in Sources */,
 				EF507B251EC70BEF00E3581B /* UIButton-Extension.swift in Sources */,
 				EF10523B1EC7FAB500B8B910 /* PopoverViewController.swift in Sources */,
@@ -516,6 +539,7 @@
 				EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */,
 				EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */,
 				EF507B141EC6E5BA00E3581B /* MessageController.swift in Sources */,
+				EF2684831ECDB07600CBBAE8 /* AYWelcomeController.swift in Sources */,
 				EF507B181EC6E5D000E3581B /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

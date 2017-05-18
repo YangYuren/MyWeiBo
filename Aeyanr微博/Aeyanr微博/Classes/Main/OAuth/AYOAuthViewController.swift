@@ -50,7 +50,7 @@ extension AYOAuthViewController {
     }
     @objc fileprivate func fill(){
         //书写js代码
-        let jsCode = "document.getElementById('userId').value='17601472402';document.getElementById('passwd').value='yyr10086'";
+        let jsCode = "document.getElementById('userId').value='17601472402';document.getElementById('passwd').value='Yang082194'";
         //执行js代码
         oAuthView.stringByEvaluatingJavaScript(from: jsCode)
     }
@@ -70,17 +70,70 @@ extension AYOAuthViewController : UIWebViewDelegate{
     }
     //准备加载某个网页时，会执行该方法
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        //获取加载网页的URL
         guard let url = request.url else {
             return true
         }
         //获取url中的sring
         let urlString = url.absoluteString
+        //判断该字符串是否包含code=
         guard urlString.contains("code=")else {
             return true
         }
+        //将code截取出来
         let code = urlString.components(separatedBy: "code=").last!
-        //直接结束
-        print(code)
+        //请求accessToken
+        loadAccessToken(code: code)
         return false
+    }
+}
+//MARK:-  请求数据Accesstoken
+extension AYOAuthViewController {
+    fileprivate func loadAccessToken(code : String){
+        NetWorkTools.shareInstance.loadAccessTools(code: code) { ( result, error) in
+            if error != nil{
+                print(error!)
+                return
+            }
+            guard let accountDict = result else{
+                return
+            }
+            //将字典转为模型
+            let account = UserAccount(dict: accountDict)
+            //请求用户信息
+            self.loaduserInfo(account: account)
+        }
+    }
+    //请求用户信息
+    fileprivate func loaduserInfo(account : UserAccount){
+        //获取accessToken
+        guard let access_token = account.access_token else {
+            return
+        }
+        //获取uid
+        guard let uid = account.uid else {
+            return
+        }
+        //发送网路请求
+        NetWorkTools.shareInstance.loadUserInfo(access_token: access_token, uid: uid) { (result, error) in
+            if error != nil{
+                print(error!)
+                return
+            }
+            guard let userInfo = result else{
+                return
+            }
+            //从字典中中选出昵称与头像
+            account.screen_name = userInfo["screen_name"] as? String
+            account.avatar_large = userInfo["avatar_large"] as? String
+            //将account对象保存起来
+            NSKeyedArchiver.archiveRootObject(account, toFile: UserAccountViewModel.shareInstance.accountPath)
+            //将account设置到单例对象中
+            UserAccountViewModel.shareInstance.account = account
+            //退出控制器
+           self.dismiss(animated: false, completion: {
+                UIApplication.shared.keyWindow?.rootViewController = AYWelcomeController()
+            })
+        }
     }
 }

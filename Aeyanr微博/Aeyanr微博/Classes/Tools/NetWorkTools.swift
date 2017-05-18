@@ -17,6 +17,7 @@ class NetWorkTools: AFHTTPSessionManager {
     static let shareInstance : NetWorkTools = {//初始化可以填加闭包来实现一些初始化
         let tools = NetWorkTools()
         tools.responseSerializer.acceptableContentTypes?.insert("text/html")
+        tools.responseSerializer.acceptableContentTypes?.insert("text/plain")
         return tools
     }()
 }
@@ -36,6 +37,32 @@ extension NetWorkTools {
             get(urlString, parameters: parameters, progress: nil, success: successCallback, failure: errorCallBack)
         }else{
             post(urlString, parameters: parameters, progress: nil, success: successCallback, failure: errorCallBack)
+        }
+    }
+}
+//MARK:- 请求AccessToken
+extension NetWorkTools{
+    func loadAccessTools(code : String , finished : @escaping ( _ result : [String : Any]?, _ error : Error?)->()){
+        //获取请求URLString
+        let urlString = "https://api.weibo.com/oauth2/access_token"
+        //获取请求参数
+        let parameters = ["client_id" : app_key , "client_secret" : app_secret , "grant_type" : "authorization_code" , "code" : code , "redirect_uri" : redirect_uri]
+        //发送网络请求
+        request(methodtype: .POST, urlString: urlString, parameters: parameters) { (result, error) in
+            finished(result as? [String : Any],error)
+        }
+    }
+}
+//MARK:- 请求用户信息
+extension NetWorkTools {
+    func loadUserInfo(access_token : String,uid : String ,finished : @escaping( _ result : [String : Any]?, _ error : Error?)->()){
+        //获取请求URLString
+        let urlString = "https://api.weibo.com/2/users/show.json"
+        //获取请求参数
+        let parameters = ["access_token" : access_token , "uid" : uid]
+        //发送网络请求
+        request(methodtype: .GET, urlString: urlString, parameters: parameters) { (result, error) in
+            finished(result as? [String : Any] ,error)
         }
     }
 }
