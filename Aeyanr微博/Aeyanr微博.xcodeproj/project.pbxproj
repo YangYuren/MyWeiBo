@@ -23,6 +23,7 @@
 		EF26847D1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26847C1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift */; };
 		EF2684831ECDB07600CBBAE8 /* AYWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2684811ECDB07600CBBAE8 /* AYWelcomeController.swift */; };
 		EF2684841ECDB07600CBBAE8 /* AYWelcomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2684821ECDB07600CBBAE8 /* AYWelcomeController.xib */; };
+		EF2684871ECDD6A000CBBAE8 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2684861ECDD6A000CBBAE8 /* Status.swift */; };
 		EF507B0E1EC6E4D600E3581B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B0D1EC6E4D600E3581B /* MainViewController.swift */; };
 		EF507B101EC6E53500E3581B /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = EF507B0F1EC6E53500E3581B /* MainVCSettings.json */; };
 		EF507B121EC6E5AE00E3581B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF507B111EC6E5AE00E3581B /* HomeController.swift */; };
@@ -41,6 +42,10 @@
 		EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBED75F1EC7350000A2F596 /* BaseViewController.swift */; };
 		EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBED7611EC736D500A2F596 /* VisitorView.swift */; };
 		EFBED7641EC736EE00A2F596 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBED7631EC736EE00A2F596 /* VisitorView.xib */; };
+		EFDE4D3E1ECEBC57002C0577 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE4D3D1ECEBC57002C0577 /* NSDate-Extension.swift */; };
+		EFDE4D401ECEBDE7002C0577 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE4D3F1ECEBDE7002C0577 /* User.swift */; };
+		EFDE4D421ECEC47F002C0577 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE4D411ECEC47F002C0577 /* StatusViewModel.swift */; };
+		EFDE4D441ECECDD0002C0577 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE4D431ECECDD0002C0577 /* HomeViewCell.swift */; };
 		F4A34D20787564F41F23BD21 /* Pods_Aeyanr__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B10A28BD747FCF456713F6 /* Pods_Aeyanr__.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +92,7 @@
 		EF26847C1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewModel.swift; sourceTree = "<group>"; };
 		EF2684811ECDB07600CBBAE8 /* AYWelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYWelcomeController.swift; sourceTree = "<group>"; };
 		EF2684821ECDB07600CBBAE8 /* AYWelcomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AYWelcomeController.xib; sourceTree = "<group>"; };
+		EF2684861ECDD6A000CBBAE8 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		EF507B0D1EC6E4D600E3581B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EF507B0F1EC6E53500E3581B /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		EF507B111EC6E5AE00E3581B /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 		EFBED75F1EC7350000A2F596 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EFBED7611EC736D500A2F596 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		EFBED7631EC736EE00A2F596 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		EFDE4D3D1ECEBC57002C0577 /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		EFDE4D3F1ECEBDE7002C0577 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EFDE4D411ECEC47F002C0577 /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		EFDE4D431ECECDD0002C0577 /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +174,7 @@
 		EF1052361EC7FA6000B8B910 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EFDE4D3D1ECEBC57002C0577 /* NSDate-Extension.swift */,
 				EF507B241EC70BEF00E3581B /* UIButton-Extension.swift */,
 				EF1052311EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift */,
 			);
@@ -233,6 +244,16 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		EF2684851ECDD67F00CBBAE8 /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF2684861ECDD6A000CBBAE8 /* Status.swift */,
+				EFDE4D3F1ECEBDE7002C0577 /* User.swift */,
+				EFDE4D411ECEC47F002C0577 /* StatusViewModel.swift */,
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
 		EF507B071EC6E2F900E3581B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,9 +271,11 @@
 		EF507B081EC6E2F900E3581B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EF2684851ECDD67F00CBBAE8 /* HomeModel */,
 				EF1052351EC7FA4000B8B910 /* UIPopover */,
 				EF507B191EC7048800E3581B /* Home.storyboard */,
 				EF507B111EC6E5AE00E3581B /* HomeController.swift */,
+				EFDE4D431ECECDD0002C0577 /* HomeViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -523,6 +546,7 @@
 			files = (
 				EF637C851ECBEBDC0098FCE1 /* Common.swift in Sources */,
 				EF637C821ECBE2270098FCE1 /* AYOAuthViewController.swift in Sources */,
+				EF2684871ECDD6A000CBBAE8 /* Status.swift in Sources */,
 				EF079A101ECC315E00B878E0 /* UserAccount.swift in Sources */,
 				EF1052341EC7F29D00B8B910 /* TitleButtom.swift in Sources */,
 				EF1052321EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift in Sources */,
@@ -532,15 +556,19 @@
 				EF10523B1EC7FAB500B8B910 /* PopoverViewController.swift in Sources */,
 				EF637C7F1ECBE1EB0098FCE1 /* NetWorkTools.swift in Sources */,
 				EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */,
+				EFDE4D3E1ECEBC57002C0577 /* NSDate-Extension.swift in Sources */,
 				EF000F101EC83D8800CE817B /* AYPresentationController.swift in Sources */,
 				EF507B0E1EC6E4D600E3581B /* MainViewController.swift in Sources */,
 				EF507B121EC6E5AE00E3581B /* HomeController.swift in Sources */,
+				EFDE4D421ECEC47F002C0577 /* StatusViewModel.swift in Sources */,
+				EFDE4D441ECECDD0002C0577 /* HomeViewCell.swift in Sources */,
 				EF000F121EC8536600CE817B /* AYPopoverAnimate.swift in Sources */,
 				EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */,
 				EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */,
 				EF507B141EC6E5BA00E3581B /* MessageController.swift in Sources */,
 				EF2684831ECDB07600CBBAE8 /* AYWelcomeController.swift in Sources */,
 				EF507B181EC6E5D000E3581B /* ProfileController.swift in Sources */,
+				EFDE4D401ECEBDE7002C0577 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

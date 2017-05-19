@@ -15,6 +15,7 @@ class UserAccountViewModel: NSObject {
         //获取沙盒路径
         var path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!//沙盒路径肯定有所以直接解包
         path = (path as NSString).strings(byAppendingPaths: ["account.plist"]).last!
+        
         return path
     }
     //计算属性
@@ -32,6 +33,5 @@ class UserAccountViewModel: NSObject {
         super.init()
         //读取信息
         account = NSKeyedUnarchiver.unarchiveObject(withFile: accountPath) as? UserAccount
-        
     }
 }

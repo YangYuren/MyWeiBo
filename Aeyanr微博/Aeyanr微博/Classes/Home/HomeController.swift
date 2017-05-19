@@ -14,7 +14,7 @@ class HomeController: BaseViewController {
     fileprivate lazy var popoverAnimate : AYPopoverAnimate  = AYPopoverAnimate { [weak self](presented) in
         self?.titleBtn.isSelected = presented
     }
-
+    lazy var status : [StatusViewModel] = [StatusViewModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
         //没有登录时候的内容
@@ -24,6 +24,11 @@ class HomeController: BaseViewController {
         }
         //设置导航栏的内容
         setupNavigationBar()
+        //请求数据
+        loadStatuses()
+        //设计估算高度
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 200
     }
     
 }
@@ -57,8 +62,42 @@ extension HomeController {
         present(vc, animated: true, completion: nil)
     }
 }
-
-
+//MARK:- 请求数据
+extension HomeController {
+    fileprivate func loadStatuses(){
+        NetWorkTools.shareInstance.loadStatus { (result, error) in
+            //错误校验
+            if error != nil {
+                print(error!)
+                return
+            }
+            //获取可选数据类型
+            guard let resultArray = result else {
+                return
+            }
+            //遍历
+            for statusDict in resultArray{
+                let st = Status(dict: statusDict)
+                let viewModel = StatusViewModel(status: st)
+                self.status.append(viewModel)
+            }
+            //刷新数据
+            self.tableView.reloadData()
+        }
+    }
+}
+//MARK:- tableView数据源方法
+extension HomeController{
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return status.count
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : HomeViewCell = tableView.dequeueReusableCell(withIdentifier: "HomeCellId") as! HomeViewCell
+        cell.viewModel  = status[indexPath.row]
+        return cell
+    }
+    
+}
 
 
 

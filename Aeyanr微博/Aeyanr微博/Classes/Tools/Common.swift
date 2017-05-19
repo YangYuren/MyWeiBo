@@ -7,8 +7,9 @@
 //
 
 import Foundation
-
+import UIKit
 //MARK:- 授权常量
 let app_key = "3304310078"
 let app_secret = "afa81d42c43bd91ccbe77fe703fe97c3"
 let redirect_uri = "http://www.520it.com"
+let edgeMargin : CGFloat = 15
