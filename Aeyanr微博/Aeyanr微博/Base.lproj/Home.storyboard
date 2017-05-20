@@ -67,7 +67,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我教授杨老师湿哒哒多大赛大多萨达" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAk-dM-xcq" userLabel="微博内容">
-                                            <rect key="frame" x="15" y="65" width="245" height="111"/>
+                                            <rect key="frame" x="15" y="65" width="245" height="45"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="245" id="c2g-1L-ELk"/>
                                             </constraints>
@@ -148,6 +148,30 @@
                                                 <constraint firstItem="7vp-ca-q3y" firstAttribute="top" secondItem="RGL-Vv-Scc" secondAttribute="top" id="y7k-Pr-pCK"/>
                                             </constraints>
                                         </view>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KrB-kj-1Qz">
+                                            <rect key="frame" x="15" y="120" width="223" height="56"/>
+                                            <color key="backgroundColor" red="0.37143756979999998" green="1" blue="0.4465300331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="56" id="aKi-XN-X4d"/>
+                                                <constraint firstAttribute="width" constant="223" id="jgM-nz-w3B"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zjt-S3-BKx">
+                                                <size key="itemSize" width="50" height="50"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="V3X-jc-9Fz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </view>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="8q4-WM-mlK" firstAttribute="bottom" secondItem="yHQ-AT-U5n" secondAttribute="bottom" id="1TJ-E6-L26"/>
@@ -156,15 +180,17 @@
                                         <constraint firstAttribute="bottom" secondItem="Hp8-cV-bFH" secondAttribute="bottom" id="Hn1-UU-RA9"/>
                                         <constraint firstItem="Yox-Jb-k3Z" firstAttribute="leading" secondItem="8q4-WM-mlK" secondAttribute="trailing" constant="10" id="Ikv-gH-z1G"/>
                                         <constraint firstItem="cTY-dU-vp8" firstAttribute="top" secondItem="yHQ-AT-U5n" secondAttribute="top" id="JoA-Av-tPS"/>
+                                        <constraint firstItem="KrB-kj-1Qz" firstAttribute="leading" secondItem="yHQ-AT-U5n" secondAttribute="leading" id="K8d-0x-S5e"/>
                                         <constraint firstItem="yHQ-AT-U5n" firstAttribute="leading" secondItem="w0f-uB-xkD" secondAttribute="leading" constant="15" id="LTY-0e-14E"/>
                                         <constraint firstItem="YAk-dM-xcq" firstAttribute="leading" secondItem="yHQ-AT-U5n" secondAttribute="leading" id="Prd-tW-m4f"/>
-                                        <constraint firstItem="Hp8-cV-bFH" firstAttribute="top" secondItem="YAk-dM-xcq" secondAttribute="bottom" constant="10" id="S9C-n7-vaj"/>
+                                        <constraint firstItem="KrB-kj-1Qz" firstAttribute="top" secondItem="YAk-dM-xcq" secondAttribute="bottom" constant="10" id="QdY-Ll-yQt"/>
                                         <constraint firstItem="8q4-WM-mlK" firstAttribute="leading" secondItem="cTY-dU-vp8" secondAttribute="leading" id="VWx-TF-v3k"/>
                                         <constraint firstItem="Hp8-cV-bFH" firstAttribute="leading" secondItem="w0f-uB-xkD" secondAttribute="leading" id="W5p-kb-kZn"/>
                                         <constraint firstItem="YAk-dM-xcq" firstAttribute="top" secondItem="yHQ-AT-U5n" secondAttribute="bottom" constant="15" id="aUS-xI-4nC"/>
                                         <constraint firstItem="Yox-Jb-k3Z" firstAttribute="centerY" secondItem="8q4-WM-mlK" secondAttribute="centerY" id="bMb-WG-Gtv"/>
                                         <constraint firstItem="cTY-dU-vp8" firstAttribute="leading" secondItem="yHQ-AT-U5n" secondAttribute="trailing" constant="15" id="hRN-tn-Dlw"/>
                                         <constraint firstItem="tTA-XN-OUk" firstAttribute="centerY" secondItem="cTY-dU-vp8" secondAttribute="centerY" id="jAe-gv-lmg"/>
+                                        <constraint firstItem="Hp8-cV-bFH" firstAttribute="top" secondItem="KrB-kj-1Qz" secondAttribute="bottom" priority="700" constant="10" id="ntI-ap-4yX"/>
                                         <constraint firstItem="Icb-pR-OUh" firstAttribute="trailing" secondItem="yHQ-AT-U5n" secondAttribute="trailing" id="uLd-fc-cx5"/>
                                         <constraint firstItem="Icb-pR-OUh" firstAttribute="bottom" secondItem="yHQ-AT-U5n" secondAttribute="bottom" id="y4h-B6-rcf"/>
                                         <constraint firstAttribute="trailing" secondItem="Hp8-cV-bFH" secondAttribute="trailing" id="zEJ-Pw-6qC"/>
@@ -174,6 +200,8 @@
                                     <outlet property="ContentLabelWith" destination="c2g-1L-ELk" id="sY8-jm-htG"/>
                                     <outlet property="contenLabel" destination="YAk-dM-xcq" id="jJN-uV-Wqy"/>
                                     <outlet property="iconView" destination="yHQ-AT-U5n" id="FfT-j3-BiN"/>
+                                    <outlet property="picViewHCon" destination="aKi-XN-X4d" id="uca-58-frQ"/>
+                                    <outlet property="picViewWCon" destination="jgM-nz-w3B" id="UPy-Ij-6ig"/>
                                     <outlet property="screenNameLabel" destination="cTY-dU-vp8" id="fsh-5x-jxM"/>
                                     <outlet property="sourceLabel" destination="Yox-Jb-k3Z" id="abs-fU-Uiz"/>
                                     <outlet property="timeLabel" destination="8q4-WM-mlK" id="b6e-cn-Ais"/>

@@ -14,7 +14,7 @@ class Status: NSObject {
     var text : String?  //微博正文
     var mid : Int = 0   //微博id
     var user : User?    //用户信息
-    
+    var pic_urls : [[String : String]]? 
     //自定义构造函数
     init(dict : [String : Any]) {
         super.init()
