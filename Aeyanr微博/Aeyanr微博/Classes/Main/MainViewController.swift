@@ -6,17 +6,6 @@
 //  Copyright © 2017年 Yang. All rights reserved.
 //
 
-import UIKit
-
-class MainViewController: UITabBarController {
-    //fileprivate lazy var composeBtn : UIButton  = UIButton.createButton(imageName: "tabbar_compose_icon_add", bgImageName:
-    //    "tabbar_compose_button")
-    //添加init方法   oc中不可以，swift可以
-    fileprivate lazy var composeBtn : UIButton  = UIButton(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupComposed()
-    }
 //    //Swift支持方法重载
 //    private func addChildViewController(chileVcName: String , title: String , imageName : String) {
 //        //1.获取命名空间
@@ -45,6 +34,15 @@ class MainViewController: UITabBarController {
 //        //3.添加控制器
 //        addChildViewController(chileNav)
 //    }
+import UIKit
+
+class MainViewController: UITabBarController {
+    //添加init方法   oc中不可以，swift可以
+    fileprivate lazy var composeBtn : UIButton  = UIButton(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupComposed()
+    }
 }
 //MARK:- 设置UI界面
 extension MainViewController {
@@ -57,6 +55,10 @@ extension MainViewController {
 //MARK:- 事件监听
 extension MainViewController {
     func composeBtnClick() {
-        print("hellow")
+        let comVC = ComposeController()
+        //包装导航控制器
+        let ComNav = UINavigationController(rootViewController: comVC)
+        present(ComNav, animated: true, completion: nil)
+        
     }
 }

@@ -39,6 +39,13 @@
 		EF637C821ECBE2270098FCE1 /* AYOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF637C801ECBE2270098FCE1 /* AYOAuthViewController.swift */; };
 		EF637C831ECBE2270098FCE1 /* AYOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF637C811ECBE2270098FCE1 /* AYOAuthViewController.xib */; };
 		EF637C851ECBEBDC0098FCE1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF637C841ECBEBDC0098FCE1 /* Common.swift */; };
+		EF9584201ED2B7F400231112 /* ComposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95841E1ED2B7F400231112 /* ComposeController.swift */; };
+		EF9584211ED2B7F400231112 /* ComposeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF95841F1ED2B7F400231112 /* ComposeController.xib */; };
+		EF9584231ED2BB7600231112 /* ComposeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9584221ED2BB7600231112 /* ComposeTitleView.swift */; };
+		EF9584251ED2BFD400231112 /* ComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9584241ED2BFD400231112 /* ComposeTextView.swift */; };
+		EF9584281ED2D8D200231112 /* PicPickerCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9584271ED2D8D200231112 /* PicPickerCollection.swift */; };
+		EF95842B1ED2DF5400231112 /* PicPickerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9584291ED2DF5400231112 /* PicPickerCollectionCell.swift */; };
+		EF95842C1ED2DF5400231112 /* PicPickerCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF95842A1ED2DF5400231112 /* PicPickerCollectionCell.xib */; };
 		EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBED75F1EC7350000A2F596 /* BaseViewController.swift */; };
 		EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBED7611EC736D500A2F596 /* VisitorView.swift */; };
 		EFBED7641EC736EE00A2F596 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBED7631EC736EE00A2F596 /* VisitorView.xib */; };
@@ -109,6 +116,13 @@
 		EF637C801ECBE2270098FCE1 /* AYOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYOAuthViewController.swift; sourceTree = "<group>"; };
 		EF637C811ECBE2270098FCE1 /* AYOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AYOAuthViewController.xib; sourceTree = "<group>"; };
 		EF637C841ECBEBDC0098FCE1 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		EF95841E1ED2B7F400231112 /* ComposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeController.swift; sourceTree = "<group>"; };
+		EF95841F1ED2B7F400231112 /* ComposeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeController.xib; sourceTree = "<group>"; };
+		EF9584221ED2BB7600231112 /* ComposeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTitleView.swift; sourceTree = "<group>"; };
+		EF9584241ED2BFD400231112 /* ComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTextView.swift; sourceTree = "<group>"; };
+		EF9584271ED2D8D200231112 /* PicPickerCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicPickerCollection.swift; sourceTree = "<group>"; };
+		EF9584291ED2DF5400231112 /* PicPickerCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicPickerCollectionCell.swift; sourceTree = "<group>"; };
+		EF95842A1ED2DF5400231112 /* PicPickerCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPickerCollectionCell.xib; sourceTree = "<group>"; };
 		EFBED75F1EC7350000A2F596 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EFBED7611EC736D500A2F596 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		EFBED7631EC736EE00A2F596 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
@@ -259,6 +273,7 @@
 		EF507B071EC6E2F900E3581B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EF95841D1ED2B7D400231112 /* Compose */,
 				EFBED75E1EC734DF00A2F596 /* Visitor */,
 				EF507B231EC70B8600E3581B /* Tools */,
 				EF507B091EC6E2F900E3581B /* Main */,
@@ -340,6 +355,28 @@
 				EF26847C1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift */,
 			);
 			path = OAuth;
+			sourceTree = "<group>";
+		};
+		EF95841D1ED2B7D400231112 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				EF9584261ED2D8B600231112 /* PicPicker */,
+				EF95841E1ED2B7F400231112 /* ComposeController.swift */,
+				EF95841F1ED2B7F400231112 /* ComposeController.xib */,
+				EF9584221ED2BB7600231112 /* ComposeTitleView.swift */,
+				EF9584241ED2BFD400231112 /* ComposeTextView.swift */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		EF9584261ED2D8B600231112 /* PicPicker */ = {
+			isa = PBXGroup;
+			children = (
+				EF9584271ED2D8D200231112 /* PicPickerCollection.swift */,
+				EF9584291ED2DF5400231112 /* PicPickerCollectionCell.swift */,
+				EF95842A1ED2DF5400231112 /* PicPickerCollectionCell.xib */,
+			);
+			path = PicPicker;
 			sourceTree = "<group>";
 		};
 		EFBED75E1EC734DF00A2F596 /* Visitor */ = {
@@ -470,10 +507,12 @@
 				EF10523C1EC7FAB500B8B910 /* PopoverViewController.xib in Resources */,
 				EF507B101EC6E53500E3581B /* MainVCSettings.json in Resources */,
 				EF507B1D1EC704A200E3581B /* Message.storyboard in Resources */,
+				EF9584211ED2B7F400231112 /* ComposeController.xib in Resources */,
 				EF507B201EC704B500E3581B /* Discover.storyboard in Resources */,
 				EF115DB01EC6B83A002335F2 /* Main.storyboard in Resources */,
 				EFBED7641EC736EE00A2F596 /* VisitorView.xib in Resources */,
 				EF2684841ECDB07600CBBAE8 /* AYWelcomeController.xib in Resources */,
+				EF95842C1ED2DF5400231112 /* PicPickerCollectionCell.xib in Resources */,
 				EF637C831ECBE2270098FCE1 /* AYOAuthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,10 +586,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9584281ED2D8D200231112 /* PicPickerCollection.swift in Sources */,
 				EF637C851ECBEBDC0098FCE1 /* Common.swift in Sources */,
 				EF637C821ECBE2270098FCE1 /* AYOAuthViewController.swift in Sources */,
 				EF2684871ECDD6A000CBBAE8 /* Status.swift in Sources */,
 				EF079A101ECC315E00B878E0 /* UserAccount.swift in Sources */,
+				EF9584231ED2BB7600231112 /* ComposeTitleView.swift in Sources */,
 				EF1052341EC7F29D00B8B910 /* TitleButtom.swift in Sources */,
 				EF1052321EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift in Sources */,
 				EF26847D1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift in Sources */,
@@ -559,9 +600,11 @@
 				EF10523B1EC7FAB500B8B910 /* PopoverViewController.swift in Sources */,
 				EF637C7F1ECBE1EB0098FCE1 /* NetWorkTools.swift in Sources */,
 				EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */,
+				EF95842B1ED2DF5400231112 /* PicPickerCollectionCell.swift in Sources */,
 				EFDE4D3E1ECEBC57002C0577 /* NSDate-Extension.swift in Sources */,
 				EF000F101EC83D8800CE817B /* AYPresentationController.swift in Sources */,
 				EF507B0E1EC6E4D600E3581B /* MainViewController.swift in Sources */,
+				EF9584251ED2BFD400231112 /* ComposeTextView.swift in Sources */,
 				EF507B121EC6E5AE00E3581B /* HomeController.swift in Sources */,
 				EFDE4D421ECEC47F002C0577 /* StatusViewModel.swift in Sources */,
 				EFDE4D441ECECDD0002C0577 /* HomeViewCell.swift in Sources */,
@@ -570,6 +613,7 @@
 				EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */,
 				EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */,
 				EF507B141EC6E5BA00E3581B /* MessageController.swift in Sources */,
+				EF9584201ED2B7F400231112 /* ComposeController.swift in Sources */,
 				EF2684831ECDB07600CBBAE8 /* AYWelcomeController.swift in Sources */,
 				EF507B181EC6E5D000E3581B /* ProfileController.swift in Sources */,
 				EFDE4D401ECEBDE7002C0577 /* User.swift in Sources */,

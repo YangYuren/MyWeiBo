@@ -14,3 +14,6 @@ let app_secret = "afa81d42c43bd91ccbe77fe703fe97c3"
 let redirect_uri = "http://www.520it.com"
 let edgeMargin : CGFloat = 15 // 边缘间距
 let itemMargin : CGFloat = 10 //item之间的间距 
+//MARK:- 选择照片通知常量
+let PicPickerAddPhotoNote = "PicPickerAddPhotoNote"
+let PicPickerRemovePhotoNote = "PicPickerRemovePhotoNote"
