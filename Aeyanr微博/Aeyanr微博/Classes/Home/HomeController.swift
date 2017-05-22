@@ -16,6 +16,7 @@ class HomeController: BaseViewController {
     fileprivate lazy var popoverAnimate : AYPopoverAnimate  = AYPopoverAnimate { [weak self](presented) in
         self?.titleBtn.isSelected = presented
     }
+    fileprivate lazy var tipLabel : UILabel = UILabel()
     lazy var status : [StatusViewModel] = [StatusViewModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,8 @@ class HomeController: BaseViewController {
         setupHeaderView()
         //布局footerView
         setupFooterView()
+        //设置提示labebl
+        setupTipLabel()
     }
 }
 //MARK:- 设置UI界面
@@ -63,7 +66,17 @@ extension HomeController {
     fileprivate func setupFooterView(){
         tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: #selector(loadMoreStatus))
     }
-    
+    //初始化tipLabel
+    fileprivate func setupTipLabel(){
+        navigationController?.navigationBar.insertSubview(tipLabel, at: 0)
+        tipLabel.frame = CGRect(x: 0, y: 10, width: UIScreen.main.bounds.size.width, height: 34)
+        //设置label属性
+        tipLabel.backgroundColor = UIColor.orange
+        tipLabel.textColor = UIColor.white
+        tipLabel.font = UIFont.systemFont(ofSize: 14)
+        tipLabel.textAlignment = .center
+        tipLabel.isHidden = true
+    }
 }
 //MARK:- 时间监听函数
 extension HomeController {
@@ -135,6 +148,24 @@ extension HomeController {
             //结束刷新
             self.tableView.mj_header.endRefreshing()
             self.tableView.mj_footer.endRefreshing()
+            //显示提示label 
+            self.showTipLabel(count: self.status.count)
+        }
+    }
+    //显示提示label
+    fileprivate func showTipLabel(count : Int){
+        //设置tipLabel属性
+        self.tipLabel.isHidden = false
+        tipLabel.text = count == 0 ? "没有数据" : "\(count) 条微博"
+        //执行动画
+        UIView.animate(withDuration: 1.0, animations: { 
+            self.tipLabel.frame.origin.y = 44
+        }) { (_) in
+            UIView.animate(withDuration: 1.0, delay: 1.5, options: [], animations: { 
+                self.tipLabel.frame.origin.y = 10
+            }, completion: { (_) in
+                self.tipLabel.isHidden = true
+            })
         }
     }
     //加载最新数据
@@ -142,6 +173,7 @@ extension HomeController {
         //调用数据
         loadStatuses(isNewData : true)
     }
+    //加载更多数据
     @objc fileprivate func loadMoreStatus(){
         //调用数据
         loadStatuses(isNewData : false)
