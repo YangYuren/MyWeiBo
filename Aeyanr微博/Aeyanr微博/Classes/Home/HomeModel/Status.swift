@@ -14,13 +14,19 @@ class Status: NSObject {
     var text : String?  //微博正文
     var mid : Int = 0   //微博id
     var user : User?    //用户信息
-    var pic_urls : [[String : String]]? 
+    var pic_urls : [[String : String]]?
+    var retweeted_status : Status? //转发微博
     //自定义构造函数
     init(dict : [String : Any]) {
         super.init()
         setValuesForKeys(dict)
+        //将用户字典转模型
         if let userDict = dict["user"] as? [String : Any] {
             user = User(dict: userDict)
+        }
+        //将转发微博字典转模型
+        if let retweetedDict = dict["retweeted_status"] as? [String : Any] {
+            retweeted_status = Status(dict: retweetedDict)
         }
         
     }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeController: BaseViewController {
     //MARK:- 懒加载属性
@@ -28,7 +29,7 @@ class HomeController: BaseViewController {
         loadStatuses()
         //设计估算高度
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 200
+        tableView.estimatedRowHeight = 300
     }
     
 }
@@ -81,6 +82,21 @@ extension HomeController {
                 let viewModel = StatusViewModel(status: st)
                 self.status.append(viewModel)
             }
+            //缓存图片
+            self.cacheImage(viewModels: self.status)
+        }
+    }
+    fileprivate func cacheImage(viewModels : [StatusViewModel]){
+        let group = DispatchGroup()//下载完图片再刷新表格
+        for viewModel in viewModels{
+            for picURL in viewModel.picURLs{
+                group.enter()
+                SDWebImageManager .shared().imageDownloader?.downloadImage(with: picURL, options: [], progress: nil, completed: { (_, _, _, _) in
+                    group.leave()
+                })
+            }
+        }
+        group.notify(queue: DispatchQueue.main) { 
             //刷新数据
             self.tableView.reloadData()
         }

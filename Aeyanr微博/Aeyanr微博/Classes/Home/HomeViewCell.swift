@@ -14,10 +14,9 @@ import SDWebImage
 class HomeViewCell: UITableViewCell {
     //MARK:- 约束属性
     @IBOutlet weak var ContentLabelWith: NSLayoutConstraint!
-    
     @IBOutlet weak var picViewHCon: NSLayoutConstraint!
-    
     @IBOutlet weak var picViewWCon: NSLayoutConstraint!
+    
     //MARK:- 空间属性
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var verifiedView: UIImageView!
@@ -26,6 +25,8 @@ class HomeViewCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var sourceLabel: UILabel!
     @IBOutlet weak var contenLabel: UILabel!
+    @IBOutlet weak var picView: PicCollectionView!
+    @IBOutlet weak var retweetLabel: UILabel!
     //MARK:- 定义属性
     var viewModel : StatusViewModel?{
         didSet{
@@ -53,6 +54,17 @@ class HomeViewCell: UITableViewCell {
             let picViewSize = calculateSize(count: viewModel.picURLs.count)
             picViewHCon.constant = picViewSize.height
             picViewWCon.constant = picViewSize.width
+            //将picURL的数据传给picView
+            picView.picUrls = viewModel.picURLs
+            //设置正文数据
+            if viewModel.status?.retweeted_status != nil {
+                if let screenName = viewModel.status?.retweeted_status?.user?.screen_name , let retweetText = viewModel.status?.retweeted_status?.text {
+                    retweetLabel.text = "@" + "\(screenName):" + "\(retweetText)"
+                }
+            }else{
+                retweetLabel.text = nil
+            }
+            
         }
     }
     
@@ -65,12 +77,23 @@ class HomeViewCell: UITableViewCell {
 extension HomeViewCell {
     //计算picView的高度宽度
     fileprivate func calculateSize(count : Int) -> CGSize{
+        let layout = picView.collectionViewLayout as! UICollectionViewFlowLayout
         //没有配图
         if count == 0 {
             return CGSize(width: 0, height: 0)
         }
+        //取出picView的layout
+        
+        /*if count == 1 {
+            let image = SDWebImageManager.shared().imageCache?.imageFromDiskCache(forKey: (viewModel?.picURLs.last?.absoluteString)!)
+            layout.itemSize = CGSize(width: (image?.size.width)!*2, height: (image?.size.height)!*2)
+            return CGSize(width: (image?.size.width)!*2, height: (image?.size.height)!*2)
+        }*/
+        
         //计算imageView的宽度高度
         let imageViewWH = (UIScreen.main.bounds.width - 2 * edgeMargin - 2 * itemMargin) / 3
+        layout.itemSize = CGSize(width: imageViewWH, height: imageViewWH)
+        
         //4张图片
         if count == 4 {
             let picViewWH = imageViewWH * 2 + itemMargin

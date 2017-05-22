@@ -46,6 +46,7 @@
 		EFDE4D401ECEBDE7002C0577 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE4D3F1ECEBDE7002C0577 /* User.swift */; };
 		EFDE4D421ECEC47F002C0577 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE4D411ECEC47F002C0577 /* StatusViewModel.swift */; };
 		EFDE4D441ECECDD0002C0577 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE4D431ECECDD0002C0577 /* HomeViewCell.swift */; };
+		EFF76AED1ED165E700AC78D3 /* PicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF76AEC1ED165E700AC78D3 /* PicCollectionView.swift */; };
 		F4A34D20787564F41F23BD21 /* Pods_Aeyanr__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B10A28BD747FCF456713F6 /* Pods_Aeyanr__.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		EFDE4D3F1ECEBDE7002C0577 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EFDE4D411ECEC47F002C0577 /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		EFDE4D431ECECDD0002C0577 /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		EFF76AEC1ED165E700AC78D3 /* PicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +278,7 @@
 				EF507B191EC7048800E3581B /* Home.storyboard */,
 				EF507B111EC6E5AE00E3581B /* HomeController.swift */,
 				EFDE4D431ECECDD0002C0577 /* HomeViewCell.swift */,
+				EFF76AEC1ED165E700AC78D3 /* PicCollectionView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				EFDE4D421ECEC47F002C0577 /* StatusViewModel.swift in Sources */,
 				EFDE4D441ECECDD0002C0577 /* HomeViewCell.swift in Sources */,
 				EF000F121EC8536600CE817B /* AYPopoverAnimate.swift in Sources */,
+				EFF76AED1ED165E700AC78D3 /* PicCollectionView.swift in Sources */,
 				EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */,
 				EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */,
 				EF507B141EC6E5BA00E3581B /* MessageController.swift in Sources */,
