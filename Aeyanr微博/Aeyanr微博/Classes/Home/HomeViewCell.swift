@@ -16,7 +16,8 @@ class HomeViewCell: UITableViewCell {
     @IBOutlet weak var ContentLabelWith: NSLayoutConstraint!
     @IBOutlet weak var picViewHCon: NSLayoutConstraint!
     @IBOutlet weak var picViewWCon: NSLayoutConstraint!
-    
+    @IBOutlet weak var retweetConsLabel: NSLayoutConstraint!
+    @IBOutlet weak var picViewBottomCons: NSLayoutConstraint!
     //MARK:- 空间属性
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var verifiedView: UIImageView!
@@ -27,6 +28,8 @@ class HomeViewCell: UITableViewCell {
     @IBOutlet weak var contenLabel: UILabel!
     @IBOutlet weak var picView: PicCollectionView!
     @IBOutlet weak var retweetLabel: UILabel!
+    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var toolBar: UIView!
     //MARK:- 定义属性
     var viewModel : StatusViewModel?{
         didSet{
@@ -45,7 +48,12 @@ class HomeViewCell: UITableViewCell {
             //时间
             timeLabel.text = viewModel.createAtText
             //来源
-            sourceLabel.text = viewModel.sourceText
+            if let sourceText = viewModel.sourceText {
+                sourceLabel.text = "来自 " + sourceText
+            }else{
+                sourceLabel.text = nil
+            }
+            
             //微博正文
             contenLabel.text = viewModel.status?.text
             //设置昵称颜色
@@ -56,15 +64,25 @@ class HomeViewCell: UITableViewCell {
             picViewWCon.constant = picViewSize.width
             //将picURL的数据传给picView
             picView.picUrls = viewModel.picURLs
-            //设置正文数据
+            //设置转发正文数据
             if viewModel.status?.retweeted_status != nil {
                 if let screenName = viewModel.status?.retweeted_status?.user?.screen_name , let retweetText = viewModel.status?.retweeted_status?.text {
-                    retweetLabel.text = "@" + "\(screenName):" + "\(retweetText)"
+                    retweetLabel.text = "@" + "\(screenName): " + "\(retweetText)"
+                    //转发正文距离顶部不约束
+                    retweetConsLabel.constant = 15
                 }
+                self.backView.isHidden = false
             }else{
+                self.backView.isHidden = true
                 retweetLabel.text = nil
+                retweetConsLabel.constant = 0
             }
-            
+            //计算cell高度  强制布局
+            layoutIfNeeded()
+            //获取底部工具栏最大Y值
+            if viewModel.cellHeight == 0 {
+                viewModel.cellHeight = toolBar.frame.maxY
+            }
         }
     }
     
@@ -80,8 +98,11 @@ extension HomeViewCell {
         let layout = picView.collectionViewLayout as! UICollectionViewFlowLayout
         //没有配图
         if count == 0 {
+            picViewBottomCons.constant = 0
             return CGSize(width: 0, height: 0)
         }
+        //有配图
+        picViewBottomCons.constant = 10
         //取出picView的layout
         
         /*if count == 1 {

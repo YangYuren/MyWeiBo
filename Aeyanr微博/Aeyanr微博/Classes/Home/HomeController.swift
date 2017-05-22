@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import MJRefresh
 
 class HomeController: BaseViewController {
     //MARK:- 懒加载属性
@@ -26,12 +27,14 @@ class HomeController: BaseViewController {
         //设置导航栏的内容
         setupNavigationBar()
         //请求数据
-        loadStatuses()
+        //loadStatuses()
         //设计估算高度
-        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 300
+        //布局header
+        setupHeaderView()
+        //布局footerView
+        setupFooterView()
     }
-    
 }
 //MARK:- 设置UI界面
 extension HomeController {
@@ -46,6 +49,21 @@ extension HomeController {
         navigationItem.titleView = titleBtn
         titleBtn.addTarget(self, action: #selector(HomeController.titleBtnClick(titleBtn:)), for: .touchUpInside)
     }
+    fileprivate func setupHeaderView(){
+        let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadNewData))
+        //设置header属性
+        header?.setTitle("下拉属性", for: .idle)
+        header?.setTitle("释放刷新", for: .pulling)
+        header?.setTitle("加载中...", for: .refreshing)
+        //设置tableView的header 
+        tableView.mj_header = header
+        //进入刷新状态
+        tableView.mj_header.beginRefreshing()
+    }
+    fileprivate func setupFooterView(){
+        tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: #selector(loadMoreStatus))
+    }
+    
 }
 //MARK:- 时间监听函数
 extension HomeController {
@@ -65,8 +83,17 @@ extension HomeController {
 }
 //MARK:- 请求数据
 extension HomeController {
-    fileprivate func loadStatuses(){
-        NetWorkTools.shareInstance.loadStatus { (result, error) in
+    fileprivate func loadStatuses(isNewData : Bool){
+        //获取sinceId   抓取最新微博
+        var since_id = 0
+        var max_id = 0
+        if isNewData {
+            since_id = status.first?.status?.mid ?? 0
+        }else{
+            max_id = status.last?.status?.mid ?? 0
+            max_id = max_id == 0 ? 0 : max_id - 1
+        }
+        NetWorkTools.shareInstance.loadStatus(since_id: since_id, max_id: max_id) { (result, error) in
             //错误校验
             if error != nil {
                 print(error!)
@@ -77,10 +104,16 @@ extension HomeController {
                 return
             }
             //遍历
+            var tempViewModel = [StatusViewModel]()
             for statusDict in resultArray{
                 let st = Status(dict: statusDict)
                 let viewModel = StatusViewModel(status: st)
-                self.status.append(viewModel)
+                tempViewModel.append(viewModel)
+            }
+            if isNewData {
+                self.status = tempViewModel + self.status
+            }else{
+                self.status = self.status + tempViewModel
             }
             //缓存图片
             self.cacheImage(viewModels: self.status)
@@ -99,7 +132,19 @@ extension HomeController {
         group.notify(queue: DispatchQueue.main) { 
             //刷新数据
             self.tableView.reloadData()
+            //结束刷新
+            self.tableView.mj_header.endRefreshing()
+            self.tableView.mj_footer.endRefreshing()
         }
+    }
+    //加载最新数据
+    @objc fileprivate func loadNewData(){
+        //调用数据
+        loadStatuses(isNewData : true)
+    }
+    @objc fileprivate func loadMoreStatus(){
+        //调用数据
+        loadStatuses(isNewData : false)
     }
 }
 //MARK:- tableView数据源方法
@@ -112,8 +157,11 @@ extension HomeController{
         cell.viewModel  = status[indexPath.row]
         return cell
     }
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return status[indexPath.row].cellHeight
+    }
 }
+
 
 
 

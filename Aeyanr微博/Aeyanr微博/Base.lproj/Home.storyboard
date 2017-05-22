@@ -76,7 +76,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hp8-cV-bFH" userLabel="工具栏">
-                                            <rect key="frame" x="0.0" y="186" width="375" height="40"/>
+                                            <rect key="frame" x="0.0" y="187" width="375" height="40"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGL-Vv-Scc">
                                                     <rect key="frame" x="0.0" y="1" width="125" height="32"/>
@@ -148,9 +148,13 @@
                                                 <constraint firstItem="7vp-ca-q3y" firstAttribute="top" secondItem="RGL-Vv-Scc" secondAttribute="top" id="y7k-Pr-pCK"/>
                                             </constraints>
                                         </view>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KrB-kj-1Qz" customClass="PicCollectionView" customModule="Aeyanr微博" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oev-pS-dMt" userLabel="转发背景View">
+                                            <rect key="frame" x="0.0" y="91" width="375" height="96"/>
+                                            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KrB-kj-1Qz" userLabel="图片View" customClass="PicCollectionView" customModule="Aeyanr微博" customModuleProvider="target">
                                             <rect key="frame" x="15" y="121" width="223" height="56"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="56" id="aKi-XN-X4d"/>
                                                 <constraint firstAttribute="width" constant="223" id="jgM-nz-w3B"/>
@@ -198,7 +202,7 @@
                                         <constraint firstItem="T0a-wh-CmQ" firstAttribute="width" secondItem="YAk-dM-xcq" secondAttribute="width" id="2gl-kK-Sba"/>
                                         <constraint firstItem="yHQ-AT-U5n" firstAttribute="top" secondItem="w0f-uB-xkD" secondAttribute="top" constant="10" id="7nO-vb-kdt"/>
                                         <constraint firstItem="tTA-XN-OUk" firstAttribute="leading" secondItem="cTY-dU-vp8" secondAttribute="trailing" constant="8" id="8id-a7-TEQ"/>
-                                        <constraint firstAttribute="bottom" secondItem="Hp8-cV-bFH" secondAttribute="bottom" id="Hn1-UU-RA9"/>
+                                        <constraint firstItem="Oev-pS-dMt" firstAttribute="leading" secondItem="w0f-uB-xkD" secondAttribute="leading" id="9xD-R4-hrF"/>
                                         <constraint firstItem="Yox-Jb-k3Z" firstAttribute="leading" secondItem="8q4-WM-mlK" secondAttribute="trailing" constant="10" id="Ikv-gH-z1G"/>
                                         <constraint firstItem="cTY-dU-vp8" firstAttribute="top" secondItem="yHQ-AT-U5n" secondAttribute="top" id="JoA-Av-tPS"/>
                                         <constraint firstItem="KrB-kj-1Qz" firstAttribute="leading" secondItem="yHQ-AT-U5n" secondAttribute="leading" id="K8d-0x-S5e"/>
@@ -210,6 +214,8 @@
                                         <constraint firstItem="Hp8-cV-bFH" firstAttribute="leading" secondItem="w0f-uB-xkD" secondAttribute="leading" id="W5p-kb-kZn"/>
                                         <constraint firstItem="YAk-dM-xcq" firstAttribute="top" secondItem="yHQ-AT-U5n" secondAttribute="bottom" constant="15" id="aUS-xI-4nC"/>
                                         <constraint firstItem="Yox-Jb-k3Z" firstAttribute="centerY" secondItem="8q4-WM-mlK" secondAttribute="centerY" id="bMb-WG-Gtv"/>
+                                        <constraint firstItem="Oev-pS-dMt" firstAttribute="top" secondItem="YAk-dM-xcq" secondAttribute="bottom" constant="8" id="bdK-94-qXM"/>
+                                        <constraint firstAttribute="trailing" secondItem="Oev-pS-dMt" secondAttribute="trailing" id="eZS-as-Dag"/>
                                         <constraint firstItem="cTY-dU-vp8" firstAttribute="leading" secondItem="yHQ-AT-U5n" secondAttribute="trailing" constant="15" id="hRN-tn-Dlw"/>
                                         <constraint firstItem="KrB-kj-1Qz" firstAttribute="top" secondItem="T0a-wh-CmQ" secondAttribute="bottom" constant="10" id="hXf-8C-oEa"/>
                                         <constraint firstItem="tTA-XN-OUk" firstAttribute="centerY" secondItem="cTY-dU-vp8" secondAttribute="centerY" id="jAe-gv-lmg"/>
@@ -217,19 +223,24 @@
                                         <constraint firstItem="Icb-pR-OUh" firstAttribute="trailing" secondItem="yHQ-AT-U5n" secondAttribute="trailing" id="uLd-fc-cx5"/>
                                         <constraint firstItem="Icb-pR-OUh" firstAttribute="bottom" secondItem="yHQ-AT-U5n" secondAttribute="bottom" id="y4h-B6-rcf"/>
                                         <constraint firstAttribute="trailing" secondItem="Hp8-cV-bFH" secondAttribute="trailing" id="zEJ-Pw-6qC"/>
+                                        <constraint firstItem="Hp8-cV-bFH" firstAttribute="top" secondItem="Oev-pS-dMt" secondAttribute="bottom" id="zgd-Zn-W64"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="ContentLabelWith" destination="c2g-1L-ELk" id="sY8-jm-htG"/>
+                                    <outlet property="backView" destination="Oev-pS-dMt" id="Pfe-F7-s7W"/>
                                     <outlet property="contenLabel" destination="YAk-dM-xcq" id="jJN-uV-Wqy"/>
                                     <outlet property="iconView" destination="yHQ-AT-U5n" id="FfT-j3-BiN"/>
                                     <outlet property="picView" destination="KrB-kj-1Qz" id="mVz-7a-5eA"/>
+                                    <outlet property="picViewBottomCons" destination="ntI-ap-4yX" id="aDx-Jg-3jz"/>
                                     <outlet property="picViewHCon" destination="aKi-XN-X4d" id="uca-58-frQ"/>
                                     <outlet property="picViewWCon" destination="jgM-nz-w3B" id="UPy-Ij-6ig"/>
+                                    <outlet property="retweetConsLabel" destination="TcU-dG-AKb" id="dfB-9W-mZv"/>
                                     <outlet property="retweetLabel" destination="T0a-wh-CmQ" id="wdv-RR-a7q"/>
                                     <outlet property="screenNameLabel" destination="cTY-dU-vp8" id="fsh-5x-jxM"/>
                                     <outlet property="sourceLabel" destination="Yox-Jb-k3Z" id="abs-fU-Uiz"/>
                                     <outlet property="timeLabel" destination="8q4-WM-mlK" id="b6e-cn-Ais"/>
+                                    <outlet property="toolBar" destination="Hp8-cV-bFH" id="glG-28-ZhD"/>
                                     <outlet property="verifiedView" destination="Icb-pR-OUh" id="rg0-TD-dSw"/>
                                     <outlet property="vipView" destination="tTA-XN-OUk" id="1Bf-FM-rch"/>
                                 </connections>

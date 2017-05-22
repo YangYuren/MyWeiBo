@@ -68,9 +68,10 @@ extension NetWorkTools {
 }
 //MARK:- 请求首页数据
 extension NetWorkTools {
-    func loadStatus(finished : @escaping( _ result : [[String : Any]]? , _ error : Error?) -> ()) {
+    func loadStatus(since_id : Int ,max_id : Int,finished : @escaping( _ result : [[String : Any]]? , _ error : Error?) -> ()) {
         let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
-        let parameters = ["access_token" : (UserAccountViewModel.shareInstance.account?.access_token)!]
+        let accessToken = (UserAccountViewModel.shareInstance.account?.access_token)!
+        let parameters = ["access_token" : accessToken, "since_id" : "\(since_id)","max_id" : "\(max_id)"]
         NetWorkTools.shareInstance.request(methodtype: .GET, urlString: urlString, parameters: parameters) { (result, error) in
             //获取字典数据
             guard let resultDict = result as? [String : Any] else{
