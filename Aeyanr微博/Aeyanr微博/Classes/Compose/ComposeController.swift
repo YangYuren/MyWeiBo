@@ -9,12 +9,16 @@
 import UIKit
 
 class ComposeController: UIViewController{
-    //懒加载属性
-    fileprivate lazy var titleView : ComposeTitleView = ComposeTitleView()
-    fileprivate lazy var images : [UIImage] = [UIImage]()
     //控件属性
     @IBOutlet weak var CtextView: ComposeTextView!//文本输入框属性
     @IBOutlet weak var pickerVeiw: PicPickerCollection!//collectionView属性
+    //懒加载属性
+    fileprivate lazy var titleView : ComposeTitleView = ComposeTitleView()
+    fileprivate lazy var images : [UIImage] = [UIImage]()
+    fileprivate lazy var emoticonVC : EmoticonController = EmoticonController { [weak self](emoticon) in
+        self?.CtextView.insertEmoticon(emoticon : emoticon)
+        self?.textViewDidChange(self!.CtextView)
+    }
     //约束属性
     @IBOutlet weak var bottomCons: NSLayoutConstraint!
     @IBOutlet weak var picPickerVeiwCons: NSLayoutConstraint!
@@ -102,7 +106,7 @@ extension ComposeController {
         dismiss(animated: true, completion: nil)
     }
     @objc fileprivate func send(){
-        print("----")
+        print(CtextView.getEmoticonString())
     }
     @objc fileprivate func UIKeyboardWillShow(note : Notification){
         let durarion = note.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
@@ -126,6 +130,14 @@ extension ComposeController {
         UIView.animate(withDuration: 0.5) { 
             self.view.layoutIfNeeded()
         }
+    }
+    @IBAction func emoticonBtnClick(){
+        //退出键盘
+        CtextView.resignFirstResponder()
+        //切换键盘
+        CtextView.inputView = CtextView.inputView != nil ? nil : emoticonVC.view
+        //弹出键盘
+        CtextView.becomeFirstResponder()
     }
 }
 //UITextViewDelegate方法

@@ -10,6 +10,14 @@
 		EF000F101EC83D8800CE817B /* AYPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */; };
 		EF000F121EC8536600CE817B /* AYPopoverAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */; };
 		EF079A101ECC315E00B878E0 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF079A0F1ECC315E00B878E0 /* UserAccount.swift */; };
+		EF0F01111ED5300500DAF1BA /* EmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F01081ED5300500DAF1BA /* EmoticonController.swift */; };
+		EF0F01121ED5300500DAF1BA /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F01091ED5300500DAF1BA /* EmoticonManager.swift */; };
+		EF0F01131ED5300500DAF1BA /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF0F010A1ED5300500DAF1BA /* Emoticons.bundle */; };
+		EF0F01141ED5300500DAF1BA /* EmoticonTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F010B1ED5300500DAF1BA /* EmoticonTextAttachment.swift */; };
+		EF0F01151ED5300500DAF1BA /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F010C1ED5300500DAF1BA /* EmoticonViewCell.swift */; };
+		EF0F01161ED5300500DAF1BA /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F010E1ED5300500DAF1BA /* Emoticon.swift */; };
+		EF0F01171ED5300500DAF1BA /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F010F1ED5300500DAF1BA /* EmoticonPackage.swift */; };
+		EF0F01181ED5300500DAF1BA /* UITextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F01101ED5300500DAF1BA /* UITextView-Extension.swift */; };
 		EF1052321EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1052311EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift */; };
 		EF1052341EC7F29D00B8B910 /* TitleButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1052331EC7F29D00B8B910 /* TitleButtom.swift */; };
 		EF10523B1EC7FAB500B8B910 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1052391EC7FAB500B8B910 /* PopoverViewController.swift */; };
@@ -81,6 +89,14 @@
 		EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPresentationController.swift; sourceTree = "<group>"; };
 		EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPopoverAnimate.swift; sourceTree = "<group>"; };
 		EF079A0F1ECC315E00B878E0 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		EF0F01081ED5300500DAF1BA /* EmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonController.swift; sourceTree = "<group>"; };
+		EF0F01091ED5300500DAF1BA /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
+		EF0F010A1ED5300500DAF1BA /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
+		EF0F010B1ED5300500DAF1BA /* EmoticonTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTextAttachment.swift; sourceTree = "<group>"; };
+		EF0F010C1ED5300500DAF1BA /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
+		EF0F010E1ED5300500DAF1BA /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		EF0F010F1ED5300500DAF1BA /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
+		EF0F01101ED5300500DAF1BA /* UITextView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView-Extension.swift"; sourceTree = "<group>"; };
 		EF1052311EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem-Extension.swift"; path = "../UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		EF1052331EC7F29D00B8B910 /* TitleButtom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButtom.swift; sourceTree = "<group>"; };
 		EF1052391EC7FAB500B8B910 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +190,29 @@
 				967E83A791B3A725C8AF2996 /* Pods-Aeyanr微博.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF0F01071ED5300500DAF1BA /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				EF0F01081ED5300500DAF1BA /* EmoticonController.swift */,
+				EF0F01091ED5300500DAF1BA /* EmoticonManager.swift */,
+				EF0F010A1ED5300500DAF1BA /* Emoticons.bundle */,
+				EF0F010B1ED5300500DAF1BA /* EmoticonTextAttachment.swift */,
+				EF0F010C1ED5300500DAF1BA /* EmoticonViewCell.swift */,
+				EF0F010D1ED5300500DAF1BA /* Model */,
+				EF0F01101ED5300500DAF1BA /* UITextView-Extension.swift */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
+		EF0F010D1ED5300500DAF1BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF0F010E1ED5300500DAF1BA /* Emoticon.swift */,
+				EF0F010F1ED5300500DAF1BA /* EmoticonPackage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EF1052351EC7FA4000B8B910 /* UIPopover */ = {
@@ -338,6 +377,7 @@
 		EF507B231EC70B8600E3581B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				EF0F01071ED5300500DAF1BA /* Emoticon */,
 				EF1052361EC7FA6000B8B910 /* Category */,
 				EF1052331EC7F29D00B8B910 /* TitleButtom.swift */,
 				EF637C7E1ECBE1EB0098FCE1 /* NetWorkTools.swift */,
@@ -504,6 +544,7 @@
 				EF507B1B1EC7048800E3581B /* Home.storyboard in Resources */,
 				EF507B221EC704CB00E3581B /* Profile.storyboard in Resources */,
 				EF115DB21EC6B83A002335F2 /* Assets.xcassets in Resources */,
+				EF0F01131ED5300500DAF1BA /* Emoticons.bundle in Resources */,
 				EF10523C1EC7FAB500B8B910 /* PopoverViewController.xib in Resources */,
 				EF507B101EC6E53500E3581B /* MainVCSettings.json in Resources */,
 				EF507B1D1EC704A200E3581B /* Message.storyboard in Resources */,
@@ -591,13 +632,17 @@
 				EF637C821ECBE2270098FCE1 /* AYOAuthViewController.swift in Sources */,
 				EF2684871ECDD6A000CBBAE8 /* Status.swift in Sources */,
 				EF079A101ECC315E00B878E0 /* UserAccount.swift in Sources */,
+				EF0F01171ED5300500DAF1BA /* EmoticonPackage.swift in Sources */,
 				EF9584231ED2BB7600231112 /* ComposeTitleView.swift in Sources */,
 				EF1052341EC7F29D00B8B910 /* TitleButtom.swift in Sources */,
+				EF0F01151ED5300500DAF1BA /* EmoticonViewCell.swift in Sources */,
 				EF1052321EC7ED2500B8B910 /* UIBarButtonItem-Extension.swift in Sources */,
 				EF26847D1ECDAB6D00CBBAE8 /* UserAccountViewModel.swift in Sources */,
+				EF0F01181ED5300500DAF1BA /* UITextView-Extension.swift in Sources */,
 				EF507B161EC6E5C700E3581B /* DiscoverController.swift in Sources */,
 				EF507B251EC70BEF00E3581B /* UIButton-Extension.swift in Sources */,
 				EF10523B1EC7FAB500B8B910 /* PopoverViewController.swift in Sources */,
+				EF0F01121ED5300500DAF1BA /* EmoticonManager.swift in Sources */,
 				EF637C7F1ECBE1EB0098FCE1 /* NetWorkTools.swift in Sources */,
 				EF115DAB1EC6B83A002335F2 /* AppDelegate.swift in Sources */,
 				EF95842B1ED2DF5400231112 /* PicPickerCollectionCell.swift in Sources */,
@@ -607,6 +652,7 @@
 				EF9584251ED2BFD400231112 /* ComposeTextView.swift in Sources */,
 				EF507B121EC6E5AE00E3581B /* HomeController.swift in Sources */,
 				EFDE4D421ECEC47F002C0577 /* StatusViewModel.swift in Sources */,
+				EF0F01111ED5300500DAF1BA /* EmoticonController.swift in Sources */,
 				EFDE4D441ECECDD0002C0577 /* HomeViewCell.swift in Sources */,
 				EF000F121EC8536600CE817B /* AYPopoverAnimate.swift in Sources */,
 				EFF76AED1ED165E700AC78D3 /* PicCollectionView.swift in Sources */,
@@ -614,7 +660,9 @@
 				EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */,
 				EF507B141EC6E5BA00E3581B /* MessageController.swift in Sources */,
 				EF9584201ED2B7F400231112 /* ComposeController.swift in Sources */,
+				EF0F01161ED5300500DAF1BA /* Emoticon.swift in Sources */,
 				EF2684831ECDB07600CBBAE8 /* AYWelcomeController.swift in Sources */,
+				EF0F01141ED5300500DAF1BA /* EmoticonTextAttachment.swift in Sources */,
 				EF507B181EC6E5D000E3581B /* ProfileController.swift in Sources */,
 				EFDE4D401ECEBDE7002C0577 /* User.swift in Sources */,
 			);

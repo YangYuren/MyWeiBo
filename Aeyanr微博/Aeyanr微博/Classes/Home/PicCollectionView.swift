@@ -28,7 +28,6 @@ extension PicCollectionView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! picCollectionCell
         cell.picURL = picUrls[indexPath.row]
-        cell.backgroundColor = UIColor.red
         return cell
     }
 }

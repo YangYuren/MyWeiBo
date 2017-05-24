@@ -84,16 +84,19 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="KvV-bL-tzO"/>
                         <barButtonItem style="plain" id="Lvz-rx-Thg">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KVV-Oy-Mqg">
-                                <rect key="frame" x="244" y="10" width="24" height="24"/>
+                                <rect key="frame" x="243" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="compose_emoticonbutton_background"/>
                                 <state key="highlighted" image="compose_emoticonbutton_background_highlighted"/>
+                                <connections>
+                                    <action selector="emoticonBtnClick" destination="-1" eventType="touchUpInside" id="qbV-HH-Dno"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Swn-Nw-aud"/>
                         <barButtonItem style="plain" id="FvS-Ca-xGK">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="INz-m2-y4H">
-                                <rect key="frame" x="312" y="10" width="24" height="24"/>
+                                <rect key="frame" x="311" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="compose_pic_add"/>
                                 <state key="highlighted" image="compose_pic_add_highlighted"/>
