@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EF000F101EC83D8800CE817B /* AYPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */; };
 		EF000F121EC8536600CE817B /* AYPopoverAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */; };
+		EF005DF81ED6C32500A54700 /* FindEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF005DF71ED6C32500A54700 /* FindEmoticon.swift */; };
 		EF079A101ECC315E00B878E0 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF079A0F1ECC315E00B878E0 /* UserAccount.swift */; };
 		EF0F01111ED5300500DAF1BA /* EmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F01081ED5300500DAF1BA /* EmoticonController.swift */; };
 		EF0F01121ED5300500DAF1BA /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F01091ED5300500DAF1BA /* EmoticonManager.swift */; };
@@ -88,6 +89,7 @@
 		967E83A791B3A725C8AF2996 /* Pods-Aeyanr微博.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aeyanr微博.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aeyanr微博/Pods-Aeyanr微博.release.xcconfig"; sourceTree = "<group>"; };
 		EF000F0F1EC83D8800CE817B /* AYPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPresentationController.swift; sourceTree = "<group>"; };
 		EF000F111EC8536600CE817B /* AYPopoverAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPopoverAnimate.swift; sourceTree = "<group>"; };
+		EF005DF71ED6C32500A54700 /* FindEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindEmoticon.swift; sourceTree = "<group>"; };
 		EF079A0F1ECC315E00B878E0 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		EF0F01081ED5300500DAF1BA /* EmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonController.swift; sourceTree = "<group>"; };
 		EF0F01091ED5300500DAF1BA /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		EF0F01071ED5300500DAF1BA /* Emoticon */ = {
 			isa = PBXGroup;
 			children = (
+				EF005DF71ED6C32500A54700 /* FindEmoticon.swift */,
 				EF0F01081ED5300500DAF1BA /* EmoticonController.swift */,
 				EF0F01091ED5300500DAF1BA /* EmoticonManager.swift */,
 				EF0F010A1ED5300500DAF1BA /* Emoticons.bundle */,
@@ -656,6 +659,7 @@
 				EFDE4D441ECECDD0002C0577 /* HomeViewCell.swift in Sources */,
 				EF000F121EC8536600CE817B /* AYPopoverAnimate.swift in Sources */,
 				EFF76AED1ED165E700AC78D3 /* PicCollectionView.swift in Sources */,
+				EF005DF81ED6C32500A54700 /* FindEmoticon.swift in Sources */,
 				EFBED7601EC7350000A2F596 /* BaseViewController.swift in Sources */,
 				EFBED7621EC736D500A2F596 /* VisitorView.swift in Sources */,
 				EF507B141EC6E5BA00E3581B /* MessageController.swift in Sources */,

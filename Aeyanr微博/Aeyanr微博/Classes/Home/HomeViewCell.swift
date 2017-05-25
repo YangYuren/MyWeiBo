@@ -54,8 +54,8 @@ class HomeViewCell: UITableViewCell {
                 sourceLabel.text = nil
             }
             
-            //微博正文
-            contenLabel.text = viewModel.status?.text
+            //微博正文  图文混排  显示表情
+            contenLabel.attributedText = FindEmoticon.shareInstance.findAttrString(statusText: viewModel.status?.text, font: contenLabel.font)
             //设置昵称颜色
             screenNameLabel.textColor = viewModel.vipImage == nil ? UIColor.black : UIColor.orange
             //计算picView的宽度与高度
@@ -67,7 +67,9 @@ class HomeViewCell: UITableViewCell {
             //设置转发正文数据
             if viewModel.status?.retweeted_status != nil {
                 if let screenName = viewModel.status?.retweeted_status?.user?.screen_name , let retweetText = viewModel.status?.retweeted_status?.text {
-                    retweetLabel.text = "@" + "\(screenName): " + "\(retweetText)"
+                    let retweetText = "@" + "\(screenName): " + "\(retweetText)"
+                    //图文混排  显示表情
+                    retweetLabel.attributedText = FindEmoticon.shareInstance.findAttrString(statusText: retweetText, font: retweetLabel.font)
                     //转发正文距离顶部不约束
                     retweetConsLabel.constant = 15
                 }
