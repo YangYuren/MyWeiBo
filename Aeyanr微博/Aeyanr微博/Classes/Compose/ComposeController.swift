@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class ComposeController: UIViewController{
     //控件属性
     @IBOutlet weak var CtextView: ComposeTextView!//文本输入框属性
@@ -103,10 +103,33 @@ extension ComposeController: UINavigationControllerDelegate,UIImagePickerControl
 //事件监听
 extension ComposeController {
     @objc fileprivate func close(){
+        //退出键盘
+        CtextView.resignFirstResponder()
+        //退出控制器
         dismiss(animated: true, completion: nil)
     }
-    @objc fileprivate func send(){
-        print(CtextView.getEmoticonString())
+    @objc fileprivate func send(){//发送微博
+        //键盘退出
+        CtextView.resignFirstResponder()
+        //获取微博正文
+        let statusText = CtextView.getEmoticonString()
+        //获取用户选中图片
+        let image = images.first
+        //定义回调包
+        let finishCallback = { (isSuccess : Bool) in
+            if !isSuccess  {
+                SVProgressHUD.showError(withStatus: "发送失败")
+                return
+            }
+            SVProgressHUD.showSuccess(withStatus: "发送成功")
+            self.dismiss(animated: true, completion: nil)
+        }
+        //发送网络请求
+        if image != nil {
+            NetWorkTools.shareInstance.senPicWeibo(statusText: statusText, image: image!, isSuccess: finishCallback)
+        }else{//不带图片微博
+            NetWorkTools.shareInstance.sendWeibo(statusText: statusText, isSuccess: finishCallback)
+        }
     }
     @objc fileprivate func UIKeyboardWillShow(note : Notification){
         let durarion = note.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
@@ -120,9 +143,8 @@ extension ComposeController {
         UIView.animate(withDuration: durarion) { 
             self.view.layoutIfNeeded()
         }
-        
     }
-    @IBAction func picPicker() {
+    @IBAction func picPicker() {//图片选择
         //退出键盘
         CtextView.resignFirstResponder()
         //执行动画
@@ -131,7 +153,7 @@ extension ComposeController {
             self.view.layoutIfNeeded()
         }
     }
-    @IBAction func emoticonBtnClick(){
+    @IBAction func emoticonBtnClick(){//表情键盘切换
         //退出键盘
         CtextView.resignFirstResponder()
         //切换键盘

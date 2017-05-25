@@ -83,3 +83,47 @@ extension NetWorkTools {
         }
     }
 }
+//MARK:- 发送微博
+extension NetWorkTools {
+    func sendWeibo(statusText : String , isSuccess : @escaping( _ isSuccess : Bool) -> ()){
+        //请求的urlString
+        let urlString = "https://api.weibo.com/2/statuses/update.json"
+        //获取请求参数列表
+        let accessToken = (UserAccountViewModel.shareInstance.account?.access_token)!
+        let parameters = ["access_token" : accessToken, "status" : statusText]
+        request(methodtype: .POST, urlString: urlString, parameters: parameters) { (result, error) in
+            if result != nil {
+                isSuccess(true)
+            }else{
+                isSuccess(false)
+            }
+        }
+    }
+}
+//MARK:- 发送微博携带照片
+extension NetWorkTools {
+    func senPicWeibo(statusText : String ,image : UIImage, isSuccess : @escaping( _ isSuccess : Bool) -> ()){
+        //请求的urlString
+        let urlString = "https://api.weibo.com/2/statuses/upload.json"
+        //获取参数
+        let accessToken = (UserAccountViewModel.shareInstance.account?.access_token)!
+        let parameters = ["access_token" : accessToken, "status" : statusText]
+        NetWorkTools.shareInstance.post(urlString, parameters: parameters, constructingBodyWith: { (formData) in
+            if let imageData = UIImageJPEGRepresentation(image, 0.5) {
+                //name属性不能随便写  必须与请求参数保持一致
+                formData.appendPart(withFileData: imageData, name: "pic", fileName: "123.png", mimeType: "image/png")
+            }
+        }, progress: nil, success: { ( _, _) in
+            isSuccess(true)
+        }) { ( _, error ) in
+            print(error)
+        }
+    }
+}
+
+
+
+
+
+
+
