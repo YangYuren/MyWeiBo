@@ -79,10 +79,11 @@ class HomeViewCell: UITableViewCell {
                 retweetLabel.text = nil
                 retweetConsLabel.constant = 0
             }
-            //计算cell高度  强制布局
-            layoutIfNeeded()
+            
             //获取底部工具栏最大Y值
             if viewModel.cellHeight == 0 {
+                //计算cell高度  强制布局
+                layoutIfNeeded()
                 viewModel.cellHeight = toolBar.frame.maxY
             }
         }
@@ -91,7 +92,7 @@ class HomeViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         //设置微博正文宽度约束
-        ContentLabelWith.constant = UIScreen.main.bounds.width - 2*edgeMargin
+        ContentLabelWith.constant = UIScreen.main.bounds.width - 2 * edgeMargin
     }
 }
 extension HomeViewCell {
@@ -119,7 +120,7 @@ extension HomeViewCell {
         
         //4张图片
         if count == 4 {
-            let picViewWH = imageViewWH * 2 + itemMargin
+            let picViewWH = imageViewWH * 2 + itemMargin + 1
             return CGSize(width: picViewWH, height: picViewWH)
         }
         //其他张图片

@@ -11,7 +11,6 @@ import SVProgressHUD
 
 class AYOAuthViewController: UIViewController {
     @IBOutlet weak var oAuthView: UIWebView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置导航栏内容

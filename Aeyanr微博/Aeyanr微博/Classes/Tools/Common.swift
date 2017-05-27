@@ -17,3 +17,7 @@ let itemMargin : CGFloat = 10 //item之间的间距
 //MARK:- 选择照片通知常量
 let PicPickerAddPhotoNote = "PicPickerAddPhotoNote"
 let PicPickerRemovePhotoNote = "PicPickerRemovePhotoNote"
+//MARK:- 照片浏览器
+let ShowPhotoBrowerNote = "ShowPhotoBrowerNote"
+let ShowPhotoBrowerIndexKey = "ShowPhotoBrowerIndexKey"
+let ShowPhotoBrowerUrlKey = "ShowPhotoBrowerUrlKey"

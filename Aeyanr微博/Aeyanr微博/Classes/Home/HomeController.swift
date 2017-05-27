@@ -18,6 +18,7 @@ class HomeController: BaseViewController {
     }
     fileprivate lazy var tipLabel : UILabel = UILabel()
     lazy var status : [StatusViewModel] = [StatusViewModel]()
+    fileprivate lazy var photoTansAnimte : PhotoTransAnimate = PhotoTransAnimate()
     override func viewDidLoad() {
         super.viewDidLoad()
         //没有登录时候的内容
@@ -37,6 +38,8 @@ class HomeController: BaseViewController {
         setupFooterView()
         //设置提示labebl
         setupTipLabel()
+        //监听通知
+        setupNotifications()
     }
 }
 //MARK:- 设置UI界面
@@ -77,8 +80,12 @@ extension HomeController {
         tipLabel.textAlignment = .center
         tipLabel.isHidden = true
     }
+    //注册通知
+    fileprivate func setupNotifications(){
+        NotificationCenter.default.addObserver(self, selector: #selector(showPhoto(notification:)), name: NSNotification.Name(rawValue: ShowPhotoBrowerNote), object: nil)
+    }
 }
-//MARK:- 时间监听函数
+//MARK:- 事件监听函数
 extension HomeController {
     @objc fileprivate func titleBtnClick(titleBtn : TitleButtom){
         titleBtn.isSelected = !titleBtn.isSelected
@@ -92,6 +99,20 @@ extension HomeController {
         vc.transitioningDelegate = popoverAnimate
         //弹出控制器
         present(vc, animated: true, completion: nil)
+    }
+    //展示图片
+    @objc fileprivate func showPhoto(notification : Notification){
+        //取出数据
+        let indexPath = notification.userInfo![ShowPhotoBrowerIndexKey] as! IndexPath
+        let picUrls = notification.userInfo![ShowPhotoBrowerUrlKey] as! [URL]
+        //创建控制器
+        let photo =  PhotoBrowerController(indexPath: indexPath, picUrls: picUrls)
+        //设置model的形式
+        photo.modalPresentationStyle = .custom
+        //自定义转场动画
+        photo.transitioningDelegate = photoTansAnimte
+        //以modle的形式弹出
+        present(photo, animated: true, completion: nil)
     }
 }
 //MARK:- 请求数据
