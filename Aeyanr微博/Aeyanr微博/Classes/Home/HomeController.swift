@@ -105,12 +105,16 @@ extension HomeController {
         //取出数据
         let indexPath = notification.userInfo![ShowPhotoBrowerIndexKey] as! IndexPath
         let picUrls = notification.userInfo![ShowPhotoBrowerUrlKey] as! [URL]
+        let object = notification.object as! AnimatePresentedDelegate
         //创建控制器
         let photo =  PhotoBrowerController(indexPath: indexPath, picUrls: picUrls)
         //设置model的形式
         photo.modalPresentationStyle = .custom
-        //自定义转场动画
+        //自定义转场的代理
         photo.transitioningDelegate = photoTansAnimte
+        // 设置动画的代理
+        photoTansAnimte.presentedDelegate = object
+        photoTansAnimte.indexpath = indexPath
         //以modle的形式弹出
         present(photo, animated: true, completion: nil)
     }

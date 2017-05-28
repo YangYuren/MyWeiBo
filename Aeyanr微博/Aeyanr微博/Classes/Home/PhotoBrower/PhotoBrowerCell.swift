@@ -43,7 +43,7 @@ extension PhotoBrowerCell {
         //设置frame
         scrollView.frame = contentView.bounds
         //frame间隙设置
-        scrollView.frame.size.width -= 20
+        //scrollView.frame.size.width -= 20
         
         progressView.bounds = CGRect(x: 0, y: 0, width: 50, height: 50)
         progressView.center = CGPoint(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.5)

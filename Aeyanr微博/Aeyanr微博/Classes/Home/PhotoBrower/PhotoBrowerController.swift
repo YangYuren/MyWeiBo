@@ -35,11 +35,12 @@ class PhotoBrowerController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    //设置空隙
-    override func loadView() {
-        super.loadView()
-        view.frame.size.width += 20
-    }
+    
+    //设置空隙 --------------
+//    override func loadView() {
+//        super.loadView()
+//        view.frame.size.width += 20
+//    }
 }
 //设置UI界面内容
 extension PhotoBrowerController {
