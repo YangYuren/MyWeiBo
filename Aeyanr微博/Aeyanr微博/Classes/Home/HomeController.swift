@@ -115,6 +115,7 @@ extension HomeController {
         // 设置动画的代理
         photoTansAnimte.presentedDelegate = object
         photoTansAnimte.indexpath = indexPath
+        photoTansAnimte.dismissDelegate = photo
         //以modle的形式弹出
         present(photo, animated: true, completion: nil)
     }

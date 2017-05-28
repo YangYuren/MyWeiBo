@@ -111,7 +111,25 @@ extension PhotoBrowerController {
         }
         SVProgressHUD.showInfo(withStatus: showInfo)
     }
-    
+}
+//MARK:- AnimateDismissdDelegate
+extension PhotoBrowerController : AnimateDismissdDelegate{
+    func indexPathForDismiss() -> IndexPath{
+        //获取当前正在显示的indexpath
+        let cell = collectionView.visibleCells.first!
+        return collectionView.indexPath(for: cell)!
+    }
+    func imageVeiw() -> UIImageView{
+        //创建对象
+        let imageView = UIImageView()
+        let cell = collectionView.visibleCells.first as! PhotoBrowerCell
+        imageView.frame = cell.imageVIew.frame
+        imageView.image = cell.imageVIew.image
+        //设置属性
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        return imageView
+    }
 }
 //自定义布局
 class PhotoBrowerCollectionViewFlowLayout : UICollectionViewFlowLayout {

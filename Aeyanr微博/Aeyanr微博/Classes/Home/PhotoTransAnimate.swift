@@ -11,6 +11,7 @@ import UIKit
 class PhotoTransAnimate: NSObject {
     var isPresented : Bool = false
     var presentedDelegate : AnimatePresentedDelegate?
+    var dismissDelegate : AnimateDismissdDelegate?
     var indexpath : IndexPath?
 }
 //面向协议开发
@@ -19,7 +20,10 @@ protocol AnimatePresentedDelegate : NSObjectProtocol{
     func endRect(indexpath : IndexPath) -> CGRect//结束为止
     func imageView(indexPath : IndexPath) -> UIImageView//零时image
 }
-
+protocol AnimateDismissdDelegate : NSObjectProtocol{
+    func indexPathForDismiss() -> IndexPath
+    func imageVeiw() -> UIImageView
+}
 
 extension PhotoTransAnimate : UIViewControllerTransitioningDelegate {
     //自动以弹出动画
@@ -67,12 +71,21 @@ extension PhotoTransAnimate : UIViewControllerAnimatedTransitioning{
         }
     }
     func animatedForDismissView(transitionContext: UIViewControllerContextTransitioning){//关闭动画
+        guard let dismissDelegate = dismissDelegate , let presentedDelegate = presentedDelegate else {
+            return
+        }
+        //取出消失的View
         let dismisView = transitionContext.view(forKey: .from)
+        dismisView?.removeFromSuperview()
+        //获取执行动画的imageView
+        let imageVeiw = dismissDelegate.imageVeiw()
+        let indexpath = dismissDelegate.indexPathForDismiss()
+        //将imageVeiw添加到ContainView
+        transitionContext.containerView.addSubview(imageVeiw)
         //执行动画
         UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
-            dismisView?.alpha = 0.0
+            imageVeiw.frame = presentedDelegate.startRect(indexpath: indexpath)
         }) { (_) in
-            dismisView?.removeFromSuperview()
             transitionContext.completeTransition(true)
         }
     }
